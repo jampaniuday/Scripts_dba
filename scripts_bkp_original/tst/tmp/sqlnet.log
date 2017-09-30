@@ -1,0 +1,1356 @@
+
+
+***********************************************************************
+Fatal NI connect error 12545, connecting to:
+ (DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=apis-server3)(PORT=1521))(CONNECT_DATA=(SERVICE_NAME=apisora3.tecnomapas.mt.br)(CID=(PROGRAM=C:\oracle\ora92\bin\RMAN.EXE)(HOST=TECNO3)(USER=oracle))))
+
+  VERSION INFORMATION:
+	TNS for 32-bit Windows: Version 9.2.0.4.0 - Production
+	Windows NT TCP/IP NT Protocol Adapter for 32-bit Windows: Version 9.2.0.4.0 - Production
+  Time: 17-OUT-2003 02:00:09
+  Tracing not turned on.
+  Tns error struct:
+    nr err code: 0
+    ns main err code: 12545
+    TNS-12545: A conexão falhou porque o objeto ou host de destino não existe
+    ns secondary err code: 12560
+    nt main err code: 515
+    TNS-00515: A conexão falhou porque o objeto ou host de destino não existe
+    nt secondary err code: 1001
+    nt OS err code: 0
+
+
+***********************************************************************
+Fatal NI connect error 12545, connecting to:
+ (DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=apis-server3)(PORT=1521))(CONNECT_DATA=(SERVICE_NAME=apisora3.tecnomapas.mt.br)(CID=(PROGRAM=C:\oracle\ora92\bin\RMAN.EXE)(HOST=TECNO3)(USER=oracle))))
+
+  VERSION INFORMATION:
+	TNS for 32-bit Windows: Version 9.2.0.4.0 - Production
+	Windows NT TCP/IP NT Protocol Adapter for 32-bit Windows: Version 9.2.0.4.0 - Production
+  Time: 26-OUT-2003 02:00:07
+  Tracing not turned on.
+  Tns error struct:
+    nr err code: 0
+    ns main err code: 12545
+    TNS-12545: A conexão falhou porque o objeto ou host de destino não existe
+    ns secondary err code: 12560
+    nt main err code: 515
+    TNS-00515: A conexão falhou porque o objeto ou host de destino não existe
+    nt secondary err code: 1001
+    nt OS err code: 0
+
+
+***********************************************************************
+Fatal NI connect error 12545, connecting to:
+ (DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=apis-server3)(PORT=1521))(CONNECT_DATA=(SERVICE_NAME=apisora3.tecnomapas.mt.br)(CID=(PROGRAM=C:\oracle\ora92\bin\RMAN.EXE)(HOST=TECNO3)(USER=oracle))))
+
+  VERSION INFORMATION:
+	TNS for 32-bit Windows: Version 9.2.0.4.0 - Production
+	Windows NT TCP/IP NT Protocol Adapter for 32-bit Windows: Version 9.2.0.4.0 - Production
+  Time: 27-OUT-2003 02:00:06
+  Tracing not turned on.
+  Tns error struct:
+    nr err code: 0
+    ns main err code: 12545
+    TNS-12545: A conexão falhou porque o objeto ou host de destino não existe
+    ns secondary err code: 12560
+    nt main err code: 515
+    TNS-00515: A conexão falhou porque o objeto ou host de destino não existe
+    nt secondary err code: 1001
+    nt OS err code: 0
+
+
+***********************************************************************
+Fatal NI connect error 12545, connecting to:
+ (DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=apis-server3)(PORT=1521))(CONNECT_DATA=(SERVICE_NAME=apisora3.tecnomapas.mt.br)(CID=(PROGRAM=C:\oracle\ora92\bin\RMAN.EXE)(HOST=TECNO3)(USER=oracle))))
+
+  VERSION INFORMATION:
+	TNS for 32-bit Windows: Version 9.2.0.4.0 - Production
+	Windows NT TCP/IP NT Protocol Adapter for 32-bit Windows: Version 9.2.0.4.0 - Production
+  Time: 12-MAR-2004 02:00:06
+  Tracing not turned on.
+  Tns error struct:
+    nr err code: 0
+    ns main err code: 12545
+    TNS-12545: A conexão falhou porque o objeto ou host de destino não existe
+    ns secondary err code: 12560
+    nt main err code: 515
+    TNS-00515: A conexão falhou porque o objeto ou host de destino não existe
+    nt secondary err code: 1001
+    nt OS err code: 0
+
+
+***********************************************************************
+Fatal NI connect error 12545, connecting to:
+ (DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=apis-server3)(PORT=1521))(CONNECT_DATA=(SERVICE_NAME=apisora3.tecnomapas.mt.br)(CID=(PROGRAM=C:\oracle\ora92\bin\RMAN.EXE)(HOST=TECNO3)(USER=oracle))))
+
+  VERSION INFORMATION:
+	TNS for 32-bit Windows: Version 9.2.0.4.0 - Production
+	Windows NT TCP/IP NT Protocol Adapter for 32-bit Windows: Version 9.2.0.4.0 - Production
+  Time: 13-MAR-2004 02:00:06
+  Tracing not turned on.
+  Tns error struct:
+    nr err code: 0
+    ns main err code: 12545
+    TNS-12545: A conexão falhou porque o objeto ou host de destino não existe
+    ns secondary err code: 12560
+    nt main err code: 515
+    TNS-00515: A conexão falhou porque o objeto ou host de destino não existe
+    nt secondary err code: 1001
+    nt OS err code: 0
+
+
+***********************************************************************
+Fatal NI connect error 12545, connecting to:
+ (DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=apis-server2)(PORT=1521))(CONNECT_DATA=(SERVICE_NAME=apisora2.tecnomapas.mt.br)(CID=(PROGRAM=C:\oracle\ora92\bin\RMAN.EXE)(HOST=TECNO3)(USER=oracle))))
+
+  VERSION INFORMATION:
+	TNS for 32-bit Windows: Version 9.2.0.4.0 - Production
+	Windows NT TCP/IP NT Protocol Adapter for 32-bit Windows: Version 9.2.0.4.0 - Production
+  Time: 13-MAR-2004 02:00:11
+  Tracing not turned on.
+  Tns error struct:
+    nr err code: 0
+    ns main err code: 12545
+    TNS-12545: A conexão falhou porque o objeto ou host de destino não existe
+    ns secondary err code: 12560
+    nt main err code: 515
+    TNS-00515: A conexão falhou porque o objeto ou host de destino não existe
+    nt secondary err code: 1001
+    nt OS err code: 0
+
+
+***********************************************************************
+Fatal NI connect error 12545, connecting to:
+ (DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=apis-server3)(PORT=1521))(CONNECT_DATA=(SERVICE_NAME=apisora3.tecnomapas.mt.br)(CID=(PROGRAM=C:\oracle\ora92\bin\RMAN.EXE)(HOST=TECNO3)(USER=oracle))))
+
+  VERSION INFORMATION:
+	TNS for 32-bit Windows: Version 9.2.0.4.0 - Production
+	Windows NT TCP/IP NT Protocol Adapter for 32-bit Windows: Version 9.2.0.4.0 - Production
+  Time: 14-MAR-2004 02:00:03
+  Tracing not turned on.
+  Tns error struct:
+    nr err code: 0
+    ns main err code: 12545
+    TNS-12545: A conexão falhou porque o objeto ou host de destino não existe
+    ns secondary err code: 12560
+    nt main err code: 515
+    TNS-00515: A conexão falhou porque o objeto ou host de destino não existe
+    nt secondary err code: 1001
+    nt OS err code: 0
+
+
+***********************************************************************
+Fatal NI connect error 12545, connecting to:
+ (DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=apis-server2)(PORT=1521))(CONNECT_DATA=(SERVICE_NAME=apisora2.tecnomapas.mt.br)(CID=(PROGRAM=C:\oracle\ora92\bin\RMAN.EXE)(HOST=TECNO3)(USER=oracle))))
+
+  VERSION INFORMATION:
+	TNS for 32-bit Windows: Version 9.2.0.4.0 - Production
+	Windows NT TCP/IP NT Protocol Adapter for 32-bit Windows: Version 9.2.0.4.0 - Production
+  Time: 14-MAR-2004 02:00:08
+  Tracing not turned on.
+  Tns error struct:
+    nr err code: 0
+    ns main err code: 12545
+    TNS-12545: A conexão falhou porque o objeto ou host de destino não existe
+    ns secondary err code: 12560
+    nt main err code: 515
+    TNS-00515: A conexão falhou porque o objeto ou host de destino não existe
+    nt secondary err code: 1001
+    nt OS err code: 0
+
+
+***********************************************************************
+Fatal NI connect error 12545, connecting to:
+ (DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=apis-server3)(PORT=1521))(CONNECT_DATA=(SERVICE_NAME=apisora3.tecnomapas.mt.br)(CID=(PROGRAM=C:\oracle\ora92\bin\RMAN.EXE)(HOST=TECNO3)(USER=oracle))))
+
+  VERSION INFORMATION:
+	TNS for 32-bit Windows: Version 9.2.0.4.0 - Production
+	Windows NT TCP/IP NT Protocol Adapter for 32-bit Windows: Version 9.2.0.4.0 - Production
+  Time: 15-MAR-2004 02:00:03
+  Tracing not turned on.
+  Tns error struct:
+    nr err code: 0
+    ns main err code: 12545
+    TNS-12545: A conexão falhou porque o objeto ou host de destino não existe
+    ns secondary err code: 12560
+    nt main err code: 515
+    TNS-00515: A conexão falhou porque o objeto ou host de destino não existe
+    nt secondary err code: 1001
+    nt OS err code: 0
+
+
+***********************************************************************
+Fatal NI connect error 12545, connecting to:
+ (DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=apis-server2)(PORT=1521))(CONNECT_DATA=(SERVICE_NAME=apisora2.tecnomapas.mt.br)(CID=(PROGRAM=C:\oracle\ora92\bin\RMAN.EXE)(HOST=TECNO3)(USER=oracle))))
+
+  VERSION INFORMATION:
+	TNS for 32-bit Windows: Version 9.2.0.4.0 - Production
+	Windows NT TCP/IP NT Protocol Adapter for 32-bit Windows: Version 9.2.0.4.0 - Production
+  Time: 15-MAR-2004 02:00:08
+  Tracing not turned on.
+  Tns error struct:
+    nr err code: 0
+    ns main err code: 12545
+    TNS-12545: A conexão falhou porque o objeto ou host de destino não existe
+    ns secondary err code: 12560
+    nt main err code: 515
+    TNS-00515: A conexão falhou porque o objeto ou host de destino não existe
+    nt secondary err code: 1001
+    nt OS err code: 0
+
+
+***********************************************************************
+Fatal NI connect error 12545, connecting to:
+ (DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=apis-server3)(PORT=1521))(CONNECT_DATA=(SERVICE_NAME=apisora3.tecnomapas.mt.br)(CID=(PROGRAM=C:\oracle\ora92\bin\RMAN.EXE)(HOST=TECNO3)(USER=oracle))))
+
+  VERSION INFORMATION:
+	TNS for 32-bit Windows: Version 9.2.0.4.0 - Production
+	Windows NT TCP/IP NT Protocol Adapter for 32-bit Windows: Version 9.2.0.4.0 - Production
+  Time: 16-MAR-2004 02:00:03
+  Tracing not turned on.
+  Tns error struct:
+    nr err code: 0
+    ns main err code: 12545
+    TNS-12545: A conexão falhou porque o objeto ou host de destino não existe
+    ns secondary err code: 12560
+    nt main err code: 515
+    TNS-00515: A conexão falhou porque o objeto ou host de destino não existe
+    nt secondary err code: 1001
+    nt OS err code: 0
+
+
+***********************************************************************
+Fatal NI connect error 12545, connecting to:
+ (DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=apis-server2)(PORT=1521))(CONNECT_DATA=(SERVICE_NAME=apisora2.tecnomapas.mt.br)(CID=(PROGRAM=C:\oracle\ora92\bin\RMAN.EXE)(HOST=TECNO3)(USER=oracle))))
+
+  VERSION INFORMATION:
+	TNS for 32-bit Windows: Version 9.2.0.4.0 - Production
+	Windows NT TCP/IP NT Protocol Adapter for 32-bit Windows: Version 9.2.0.4.0 - Production
+  Time: 16-MAR-2004 02:00:08
+  Tracing not turned on.
+  Tns error struct:
+    nr err code: 0
+    ns main err code: 12545
+    TNS-12545: A conexão falhou porque o objeto ou host de destino não existe
+    ns secondary err code: 12560
+    nt main err code: 515
+    TNS-00515: A conexão falhou porque o objeto ou host de destino não existe
+    nt secondary err code: 1001
+    nt OS err code: 0
+
+
+***********************************************************************
+Fatal NI connect error 12535, connecting to:
+ (DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=apis-server3)(PORT=1521))(CONNECT_DATA=(SERVICE_NAME=apisora3.tecnomapas.mt.br)(CID=(PROGRAM=C:\oracle\ora92\bin\RMAN.EXE)(HOST=TECNO3)(USER=oracle))))
+
+  VERSION INFORMATION:
+	TNS for 32-bit Windows: Version 9.2.0.4.0 - Production
+	Windows NT TCP/IP NT Protocol Adapter for 32-bit Windows: Version 9.2.0.4.0 - Production
+  Time: 22-MAR-2004 02:00:22
+  Tracing not turned on.
+  Tns error struct:
+    nr err code: 0
+    ns main err code: 12535
+    TNS-12535: TNS:operação sofreu timeout
+    ns secondary err code: 12560
+    nt main err code: 505
+    TNS-00505: Operação sofreu timeout
+    nt secondary err code: 60
+    nt OS err code: 0
+
+
+***********************************************************************
+Fatal NI connect error 12500, connecting to:
+ (DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=tecno3)(PORT=1521))(CONNECT_DATA=(SERVER=DEDICATED)(SERVICE_NAME=ora3.tecnomapas.mt.br)(CID=(PROGRAM=C:\oracle\ora92\bin\RMAN.EXE)(HOST=TECNO3)(USER=oracle))))
+
+  VERSION INFORMATION:
+	TNS for 32-bit Windows: Version 9.2.0.4.0 - Production
+	Windows NT TCP/IP NT Protocol Adapter for 32-bit Windows: Version 9.2.0.4.0 - Production
+  Time: 30-ABR-2004 02:00:07
+  Tracing not turned on.
+  Tns error struct:
+    nr err code: 0
+    ns main err code: 12564
+    TNS-12564: TNS:conexão recusada
+    ns secondary err code: 0
+    nt main err code: 0
+    nt secondary err code: 0
+    nt OS err code: 0
+
+
+***********************************************************************
+Fatal NI connect error 12500, connecting to:
+ (DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=tecno3)(PORT=1521))(CONNECT_DATA=(SERVER=DEDICATED)(SERVICE_NAME=ora3.tecnomapas.mt.br)(CID=(PROGRAM=C:\oracle\ora92\bin\RMAN.EXE)(HOST=TECNO3)(USER=oracle))))
+
+  VERSION INFORMATION:
+	TNS for 32-bit Windows: Version 9.2.0.4.0 - Production
+	Windows NT TCP/IP NT Protocol Adapter for 32-bit Windows: Version 9.2.0.4.0 - Production
+  Time: 30-ABR-2004 02:00:08
+  Tracing not turned on.
+  Tns error struct:
+    nr err code: 0
+    ns main err code: 12564
+    TNS-12564: TNS:conexão recusada
+    ns secondary err code: 0
+    nt main err code: 0
+    nt secondary err code: 0
+    nt OS err code: 0
+
+
+***********************************************************************
+Fatal NI connect error 12500, connecting to:
+ (DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=tecno3)(PORT=1521))(CONNECT_DATA=(SERVER=DEDICATED)(SERVICE_NAME=ora3.tecnomapas.mt.br)(CID=(PROGRAM=C:\oracle\ora92\bin\RMAN.EXE)(HOST=TECNO3)(USER=oracle))))
+
+  VERSION INFORMATION:
+	TNS for 32-bit Windows: Version 9.2.0.4.0 - Production
+	Windows NT TCP/IP NT Protocol Adapter for 32-bit Windows: Version 9.2.0.4.0 - Production
+  Time: 30-ABR-2004 02:00:09
+  Tracing not turned on.
+  Tns error struct:
+    nr err code: 0
+    ns main err code: 12564
+    TNS-12564: TNS:conexão recusada
+    ns secondary err code: 0
+    nt main err code: 0
+    nt secondary err code: 0
+    nt OS err code: 0
+
+
+***********************************************************************
+Fatal NI connect error 12500, connecting to:
+ (DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=tecno3)(PORT=1521))(CONNECT_DATA=(SERVER=DEDICATED)(SERVICE_NAME=ora3.tecnomapas.mt.br)(CID=(PROGRAM=C:\oracle\ora92\bin\RMAN.EXE)(HOST=TECNO3)(USER=oracle))))
+
+  VERSION INFORMATION:
+	TNS for 32-bit Windows: Version 9.2.0.4.0 - Production
+	Windows NT TCP/IP NT Protocol Adapter for 32-bit Windows: Version 9.2.0.4.0 - Production
+  Time: 30-ABR-2004 02:00:10
+  Tracing not turned on.
+  Tns error struct:
+    nr err code: 0
+    ns main err code: 12564
+    TNS-12564: TNS:conexão recusada
+    ns secondary err code: 0
+    nt main err code: 0
+    nt secondary err code: 0
+    nt OS err code: 0
+
+
+***********************************************************************
+Fatal NI connect error 12535, connecting to:
+ (DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=apis-server3)(PORT=1521))(CONNECT_DATA=(SERVICE_NAME=apisora3.tecnomapas.mt.br)(CID=(PROGRAM=C:\oracle\ora92\bin\RMAN.EXE)(HOST=TECNO3)(USER=oracle))))
+
+  VERSION INFORMATION:
+	TNS for 32-bit Windows: Version 9.2.0.4.0 - Production
+	Windows NT TCP/IP NT Protocol Adapter for 32-bit Windows: Version 9.2.0.4.0 - Production
+  Time: 09-JUL-2004 02:00:23
+  Tracing not turned on.
+  Tns error struct:
+    nr err code: 0
+    ns main err code: 12535
+    TNS-12535: TNS:operação sofreu timeout
+    ns secondary err code: 12560
+    nt main err code: 505
+    TNS-00505: Operação sofreu timeout
+    nt secondary err code: 60
+    nt OS err code: 0
+
+
+***********************************************************************
+Fatal NI connect error 12535, connecting to:
+ (DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=apis-server3)(PORT=1521))(CONNECT_DATA=(SERVICE_NAME=apisora3.tecnomapas.mt.br)(CID=(PROGRAM=C:\oracle\ora92\bin\RMAN.EXE)(HOST=TECNO3)(USER=oracle))))
+
+  VERSION INFORMATION:
+	TNS for 32-bit Windows: Version 9.2.0.4.0 - Production
+	Windows NT TCP/IP NT Protocol Adapter for 32-bit Windows: Version 9.2.0.4.0 - Production
+  Time: 14-JUL-2004 02:00:23
+  Tracing not turned on.
+  Tns error struct:
+    nr err code: 0
+    ns main err code: 12535
+    TNS-12535: TNS:operação sofreu timeout
+    ns secondary err code: 12560
+    nt main err code: 505
+    TNS-00505: Operação sofreu timeout
+    nt secondary err code: 60
+    nt OS err code: 0
+
+
+***********************************************************************
+Fatal NI connect error 12535, connecting to:
+ (DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=apis-server3)(PORT=1521))(CONNECT_DATA=(SERVICE_NAME=apisora3.tecnomapas.mt.br)(CID=(PROGRAM=C:\oracle\ora92\bin\RMAN.EXE)(HOST=TECNO3)(USER=oracle))))
+
+  VERSION INFORMATION:
+	TNS for 32-bit Windows: Version 9.2.0.4.0 - Production
+	Windows NT TCP/IP NT Protocol Adapter for 32-bit Windows: Version 9.2.0.4.0 - Production
+  Time: 25-JUL-2004 02:00:22
+  Tracing not turned on.
+  Tns error struct:
+    nr err code: 0
+    ns main err code: 12535
+    TNS-12535: TNS:operação sofreu timeout
+    ns secondary err code: 12560
+    nt main err code: 505
+    TNS-00505: Operação sofreu timeout
+    nt secondary err code: 60
+    nt OS err code: 0
+
+
+***********************************************************************
+Fatal NI connect error 12535, connecting to:
+ (DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=apis-server3)(PORT=1521))(CONNECT_DATA=(SERVICE_NAME=apisora3.tecnomapas.mt.br)(CID=(PROGRAM=C:\oracle\ora92\bin\RMAN.EXE)(HOST=TECNO3)(USER=oracle))))
+
+  VERSION INFORMATION:
+	TNS for 32-bit Windows: Version 9.2.0.4.0 - Production
+	Windows NT TCP/IP NT Protocol Adapter for 32-bit Windows: Version 9.2.0.4.0 - Production
+  Time: 26-JUL-2004 02:00:22
+  Tracing not turned on.
+  Tns error struct:
+    nr err code: 0
+    ns main err code: 12535
+    TNS-12535: TNS:operação sofreu timeout
+    ns secondary err code: 12560
+    nt main err code: 505
+    TNS-00505: Operação sofreu timeout
+    nt secondary err code: 60
+    nt OS err code: 0
+
+
+***********************************************************************
+Fatal NI connect error 12535, connecting to:
+ (DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=apis-server3)(PORT=1521))(CONNECT_DATA=(SERVICE_NAME=apisora3.tecnomapas.mt.br)(CID=(PROGRAM=C:\oracle\ora92\bin\RMAN.EXE)(HOST=TECNO3)(USER=oracle))))
+
+  VERSION INFORMATION:
+	TNS for 32-bit Windows: Version 9.2.0.4.0 - Production
+	Windows NT TCP/IP NT Protocol Adapter for 32-bit Windows: Version 9.2.0.4.0 - Production
+  Time: 30-JUL-2004 02:00:24
+  Tracing not turned on.
+  Tns error struct:
+    nr err code: 0
+    ns main err code: 12535
+    TNS-12535: TNS:operação sofreu timeout
+    ns secondary err code: 12560
+    nt main err code: 505
+    TNS-00505: Operação sofreu timeout
+    nt secondary err code: 60
+    nt OS err code: 0
+
+
+***********************************************************************
+Fatal NI connect error 12535, connecting to:
+ (DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=apis-server3)(PORT=1521))(CONNECT_DATA=(SERVICE_NAME=apisora3.tecnomapas.mt.br)(CID=(PROGRAM=C:\oracle\ora92\bin\RMAN.EXE)(HOST=TECNO3)(USER=oracle))))
+
+  VERSION INFORMATION:
+	TNS for 32-bit Windows: Version 9.2.0.4.0 - Production
+	Windows NT TCP/IP NT Protocol Adapter for 32-bit Windows: Version 9.2.0.4.0 - Production
+  Time: 02-AGO-2004 02:00:22
+  Tracing not turned on.
+  Tns error struct:
+    nr err code: 0
+    ns main err code: 12535
+    TNS-12535: TNS:operação sofreu timeout
+    ns secondary err code: 12560
+    nt main err code: 505
+    TNS-00505: Operação sofreu timeout
+    nt secondary err code: 60
+    nt OS err code: 0
+
+
+***********************************************************************
+Fatal NI connect error 12535, connecting to:
+ (DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=apis-server3)(PORT=1521))(CONNECT_DATA=(SERVICE_NAME=apisora3.tecnomapas.mt.br)(CID=(PROGRAM=C:\oracle\ora92\bin\RMAN.EXE)(HOST=TECNO3)(USER=oracle))))
+
+  VERSION INFORMATION:
+	TNS for 32-bit Windows: Version 9.2.0.4.0 - Production
+	Windows NT TCP/IP NT Protocol Adapter for 32-bit Windows: Version 9.2.0.4.0 - Production
+  Time: 03-AGO-2004 02:02:09
+  Tracing not turned on.
+  Tns error struct:
+    nr err code: 0
+    ns main err code: 12535
+    TNS-12535: TNS:operação sofreu timeout
+    ns secondary err code: 12560
+    nt main err code: 505
+    TNS-00505: Operação sofreu timeout
+    nt secondary err code: 60
+    nt OS err code: 0
+
+
+***********************************************************************
+Fatal NI connect error 12535, connecting to:
+ (DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=apis-server3)(PORT=1521))(CONNECT_DATA=(SERVICE_NAME=apisora3.tecnomapas.mt.br)(CID=(PROGRAM=C:\oracle\ora92\bin\RMAN.EXE)(HOST=TECNO3)(USER=oracle))))
+
+  VERSION INFORMATION:
+	TNS for 32-bit Windows: Version 9.2.0.4.0 - Production
+	Windows NT TCP/IP NT Protocol Adapter for 32-bit Windows: Version 9.2.0.4.0 - Production
+  Time: 16-AGO-2004 02:00:24
+  Tracing not turned on.
+  Tns error struct:
+    nr err code: 0
+    ns main err code: 12535
+    TNS-12535: TNS:operação sofreu timeout
+    ns secondary err code: 12560
+    nt main err code: 505
+    TNS-00505: Operação sofreu timeout
+    nt secondary err code: 60
+    nt OS err code: 0
+
+
+***********************************************************************
+Fatal NI connect error 12535, connecting to:
+ (DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=apis-server3)(PORT=1521))(CONNECT_DATA=(SERVICE_NAME=apisora3.tecnomapas.mt.br)(CID=(PROGRAM=C:\oracle\ora92\bin\RMAN.EXE)(HOST=TECNO3)(USER=oracle))))
+
+  VERSION INFORMATION:
+	TNS for 32-bit Windows: Version 9.2.0.4.0 - Production
+	Windows NT TCP/IP NT Protocol Adapter for 32-bit Windows: Version 9.2.0.4.0 - Production
+  Time: 23-AGO-2004 02:00:23
+  Tracing not turned on.
+  Tns error struct:
+    nr err code: 0
+    ns main err code: 12535
+    TNS-12535: TNS:operação sofreu timeout
+    ns secondary err code: 12560
+    nt main err code: 505
+    TNS-00505: Operação sofreu timeout
+    nt secondary err code: 60
+    nt OS err code: 0
+
+
+***********************************************************************
+Fatal NI connect error 12535, connecting to:
+ (DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=apis-server3)(PORT=1521))(CONNECT_DATA=(SERVICE_NAME=apisora3.tecnomapas.mt.br)(CID=(PROGRAM=C:\oracle\ora92\bin\RMAN.EXE)(HOST=TECNO3)(USER=oracle))))
+
+  VERSION INFORMATION:
+	TNS for 32-bit Windows: Version 9.2.0.4.0 - Production
+	Windows NT TCP/IP NT Protocol Adapter for 32-bit Windows: Version 9.2.0.4.0 - Production
+  Time: 29-SET-2004 02:00:24
+  Tracing not turned on.
+  Tns error struct:
+    nr err code: 0
+    ns main err code: 12535
+    TNS-12535: TNS:operação sofreu timeout
+    ns secondary err code: 12560
+    nt main err code: 505
+    TNS-00505: Operação sofreu timeout
+    nt secondary err code: 60
+    nt OS err code: 0
+
+
+***********************************************************************
+Fatal NI connect error 12535, connecting to:
+ (DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=apis-server3)(PORT=1521))(CONNECT_DATA=(SERVICE_NAME=apisora3.tecnomapas.mt.br)(CID=(PROGRAM=C:\oracle\ora92\bin\RMAN.EXE)(HOST=TECNO3)(USER=oracle))))
+
+  VERSION INFORMATION:
+	TNS for 32-bit Windows: Version 9.2.0.4.0 - Production
+	Windows NT TCP/IP NT Protocol Adapter for 32-bit Windows: Version 9.2.0.4.0 - Production
+  Time: 30-SET-2004 02:00:24
+  Tracing not turned on.
+  Tns error struct:
+    nr err code: 0
+    ns main err code: 12535
+    TNS-12535: TNS:operação sofreu timeout
+    ns secondary err code: 12560
+    nt main err code: 505
+    TNS-00505: Operação sofreu timeout
+    nt secondary err code: 60
+    nt OS err code: 0
+
+
+***********************************************************************
+Fatal NI connect error 12535, connecting to:
+ (DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=apis-server3)(PORT=1521))(CONNECT_DATA=(SERVICE_NAME=apisora3.tecnomapas.mt.br)(CID=(PROGRAM=C:\oracle\ora92\bin\RMAN.EXE)(HOST=TECNO3)(USER=oracle))))
+
+  VERSION INFORMATION:
+	TNS for 32-bit Windows: Version 9.2.0.4.0 - Production
+	Windows NT TCP/IP NT Protocol Adapter for 32-bit Windows: Version 9.2.0.4.0 - Production
+  Time: 02-OUT-2004 02:00:24
+  Tracing not turned on.
+  Tns error struct:
+    nr err code: 0
+    ns main err code: 12535
+    TNS-12535: TNS:operação sofreu timeout
+    ns secondary err code: 12560
+    nt main err code: 505
+    TNS-00505: Operação sofreu timeout
+    nt secondary err code: 60
+    nt OS err code: 0
+
+
+***********************************************************************
+Fatal NI connect error 12535, connecting to:
+ (DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=apis-server3)(PORT=1521))(CONNECT_DATA=(SERVICE_NAME=apisora3.tecnomapas.mt.br)(CID=(PROGRAM=C:\oracle\ora92\bin\RMAN.EXE)(HOST=TECNO3)(USER=oracle))))
+
+  VERSION INFORMATION:
+	TNS for 32-bit Windows: Version 9.2.0.4.0 - Production
+	Windows NT TCP/IP NT Protocol Adapter for 32-bit Windows: Version 9.2.0.4.0 - Production
+  Time: 08-OUT-2004 02:00:25
+  Tracing not turned on.
+  Tns error struct:
+    nr err code: 0
+    ns main err code: 12535
+    TNS-12535: TNS:operação sofreu timeout
+    ns secondary err code: 12560
+    nt main err code: 505
+    TNS-00505: Operação sofreu timeout
+    nt secondary err code: 60
+    nt OS err code: 0
+
+
+***********************************************************************
+Fatal NI connect error 12571, connecting to:
+ (DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=apis-server3)(PORT=1521))(CONNECT_DATA=(SERVICE_NAME=apisora3.tecnomapas.mt.br)(CID=(PROGRAM=C:\oracle\ora92\bin\RMAN.EXE)(HOST=TECNO3)(USER=oracle))))
+
+  VERSION INFORMATION:
+	TNS for 32-bit Windows: Version 9.2.0.4.0 - Production
+	Windows NT TCP/IP NT Protocol Adapter for 32-bit Windows: Version 9.2.0.4.0 - Production
+  Time: 08-OUT-2004 17:00:23
+  Tracing not turned on.
+  Tns error struct:
+    nr err code: 0
+    ns main err code: 12571
+    TNS-12571: TNS:falha do gravador do pacote
+    ns secondary err code: 12560
+    nt main err code: 530
+    TNS-00530: Erro de adaptador de protocolo
+    nt secondary err code: 54
+    nt OS err code: 0
+
+
+***********************************************************************
+Fatal NI connect error 12571, connecting to:
+ (DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=apis-server3)(PORT=1521))(CONNECT_DATA=(SERVICE_NAME=apisora3.tecnomapas.mt.br)(CID=(PROGRAM=C:\oracle\ora92\bin\RMAN.EXE)(HOST=TECNO3)(USER=oracle))))
+
+  VERSION INFORMATION:
+	TNS for 32-bit Windows: Version 9.2.0.4.0 - Production
+	Windows NT TCP/IP NT Protocol Adapter for 32-bit Windows: Version 9.2.0.4.0 - Production
+  Time: 08-OUT-2004 18:05:42
+  Tracing not turned on.
+  Tns error struct:
+    nr err code: 0
+    ns main err code: 12571
+    TNS-12571: TNS:falha do gravador do pacote
+    ns secondary err code: 12560
+    nt main err code: 530
+    TNS-00530: Erro de adaptador de protocolo
+    nt secondary err code: 54
+    nt OS err code: 0
+
+
+***********************************************************************
+Fatal NI connect error 12571, connecting to:
+ (DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=apis-server3)(PORT=1521))(CONNECT_DATA=(SERVICE_NAME=apisora3.tecnomapas.mt.br)(CID=(PROGRAM=C:\oracle\ora92\bin\RMAN.EXE)(HOST=TECNO3)(USER=oracle))))
+
+  VERSION INFORMATION:
+	TNS for 32-bit Windows: Version 9.2.0.4.0 - Production
+	Windows NT TCP/IP NT Protocol Adapter for 32-bit Windows: Version 9.2.0.4.0 - Production
+  Time: 09-OUT-2004 02:00:03
+  Tracing not turned on.
+  Tns error struct:
+    nr err code: 0
+    ns main err code: 12571
+    TNS-12571: TNS:falha do gravador do pacote
+    ns secondary err code: 12560
+    nt main err code: 530
+    TNS-00530: Erro de adaptador de protocolo
+    nt secondary err code: 54
+    nt OS err code: 0
+
+
+***********************************************************************
+Fatal NI connect error 12571, connecting to:
+ (DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=apis-server3)(PORT=1521))(CONNECT_DATA=(SERVICE_NAME=apisora3.tecnomapas.mt.br)(CID=(PROGRAM=C:\oracle\ora92\bin\RMAN.EXE)(HOST=TECNO3)(USER=oracle))))
+
+  VERSION INFORMATION:
+	TNS for 32-bit Windows: Version 9.2.0.4.0 - Production
+	Windows NT TCP/IP NT Protocol Adapter for 32-bit Windows: Version 9.2.0.4.0 - Production
+  Time: 09-OUT-2004 10:45:18
+  Tracing not turned on.
+  Tns error struct:
+    nr err code: 0
+    ns main err code: 12571
+    TNS-12571: TNS:falha do gravador do pacote
+    ns secondary err code: 12560
+    nt main err code: 530
+    TNS-00530: Erro de adaptador de protocolo
+    nt secondary err code: 54
+    nt OS err code: 0
+
+
+***********************************************************************
+Fatal NI connect error 12541, connecting to:
+ (DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=apis-server3)(PORT=1521))(CONNECT_DATA=(SERVICE_NAME=apisora3.tecnomapas.mt.br)(CID=(PROGRAM=C:\oracle\ora92\bin\RMAN.EXE)(HOST=TECNO3)(USER=oracle))))
+
+  VERSION INFORMATION:
+	TNS for 32-bit Windows: Version 9.2.0.4.0 - Production
+	Windows NT TCP/IP NT Protocol Adapter for 32-bit Windows: Version 9.2.0.4.0 - Production
+  Time: 09-OUT-2004 10:53:17
+  Tracing not turned on.
+  Tns error struct:
+    nr err code: 0
+    ns main err code: 12541
+    TNS-12541: TNS:não há listener
+    ns secondary err code: 12560
+    nt main err code: 511
+    TNS-00511: Não há listener
+    nt secondary err code: 61
+    nt OS err code: 0
+
+
+***********************************************************************
+Fatal NI connect error 12571, connecting to:
+ (DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=192.168.1.204)(PORT=1521))(CONNECT_DATA=(SERVICE_NAME=apisora3.tecnomapas.mt.br)(CID=(PROGRAM=C:\oracle\ora92\bin\sqlplus.exe)(HOST=TECNO3)(USER=oracle))))
+
+  VERSION INFORMATION:
+	TNS for 32-bit Windows: Version 9.2.0.4.0 - Production
+	Windows NT TCP/IP NT Protocol Adapter for 32-bit Windows: Version 9.2.0.4.0 - Production
+  Time: 09-OUT-2004 11:14:50
+  Tracing not turned on.
+  Tns error struct:
+    nr err code: 0
+    ns main err code: 12571
+    TNS-12571: TNS:falha do gravador do pacote
+    ns secondary err code: 12560
+    nt main err code: 530
+    TNS-00530: Erro de adaptador de protocolo
+    nt secondary err code: 54
+    nt OS err code: 0
+
+
+***********************************************************************
+Fatal NI connect error 12545, connecting to:
+ (DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=apis-server2)(PORT=1521))(CONNECT_DATA=(SERVICE_NAME=apisora2.tecnomapas.mt.br)(CID=(PROGRAM=C:\oracle\ora92\bin\RMAN.EXE)(HOST=TECNO3)(USER=oracle))))
+
+  VERSION INFORMATION:
+	TNS for 32-bit Windows: Version 9.2.0.4.0 - Production
+	Windows NT TCP/IP NT Protocol Adapter for 32-bit Windows: Version 9.2.0.4.0 - Production
+  Time: 18-OUT-2004 02:00:05
+  Tracing not turned on.
+  Tns error struct:
+    nr err code: 0
+    ns main err code: 12545
+    TNS-12545: A conexão falhou porque o objeto ou host de destino não existe
+    ns secondary err code: 12560
+    nt main err code: 515
+    TNS-00515: A conexão falhou porque o objeto ou host de destino não existe
+    nt secondary err code: 1001
+    nt OS err code: 0
+
+
+***********************************************************************
+Fatal NI connect error 12545, connecting to:
+ (DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=tecno-net1)(PORT=1521))(CONNECT_DATA=(SERVICE_NAME=oranet1.tecnomapas.mt.br)(CID=(PROGRAM=C:\oracle\ora92\bin\RMAN.EXE)(HOST=TECNO3)(USER=oracle))))
+
+  VERSION INFORMATION:
+	TNS for 32-bit Windows: Version 9.2.0.4.0 - Production
+	Windows NT TCP/IP NT Protocol Adapter for 32-bit Windows: Version 9.2.0.4.0 - Production
+  Time: 27-OUT-2004 02:58:57
+  Tracing not turned on.
+  Tns error struct:
+    nr err code: 0
+    ns main err code: 12545
+    TNS-12545: A conexão falhou porque o objeto ou host de destino não existe
+    ns secondary err code: 12560
+    nt main err code: 515
+    TNS-00515: A conexão falhou porque o objeto ou host de destino não existe
+    nt secondary err code: 1001
+    nt OS err code: 0
+
+
+***********************************************************************
+Fatal NI connect error 12545, connecting to:
+ (DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=tecno-net1)(PORT=1521))(CONNECT_DATA=(SERVICE_NAME=oranet1.tecnomapas.mt.br)(CID=(PROGRAM=C:\oracle\ora92\bin\RMAN.EXE)(HOST=TECNO3)(USER=oracle))))
+
+  VERSION INFORMATION:
+	TNS for 32-bit Windows: Version 9.2.0.4.0 - Production
+	Windows NT TCP/IP NT Protocol Adapter for 32-bit Windows: Version 9.2.0.4.0 - Production
+  Time: 29-OUT-2004 02:47:20
+  Tracing not turned on.
+  Tns error struct:
+    nr err code: 0
+    ns main err code: 12545
+    TNS-12545: A conexão falhou porque o objeto ou host de destino não existe
+    ns secondary err code: 12560
+    nt main err code: 515
+    TNS-00515: A conexão falhou porque o objeto ou host de destino não existe
+    nt secondary err code: 1001
+    nt OS err code: 0
+
+
+***********************************************************************
+Fatal NI connect error 12545, connecting to:
+ (DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=apis-server2)(PORT=1521))(CONNECT_DATA=(SERVICE_NAME=apisora2.tecnomapas.mt.br)(CID=(PROGRAM=C:\oracle\ora92\bin\RMAN.EXE)(HOST=TECNO3)(USER=oracle))))
+
+  VERSION INFORMATION:
+	TNS for 32-bit Windows: Version 9.2.0.4.0 - Production
+	Windows NT TCP/IP NT Protocol Adapter for 32-bit Windows: Version 9.2.0.4.0 - Production
+  Time: 18-NOV-2004 02:00:59
+  Tracing not turned on.
+  Tns error struct:
+    nr err code: 0
+    ns main err code: 12545
+    TNS-12545: A conexão falhou porque o objeto ou host de destino não existe
+    ns secondary err code: 12560
+    nt main err code: 515
+    TNS-00515: A conexão falhou porque o objeto ou host de destino não existe
+    nt secondary err code: 1001
+    nt OS err code: 0
+
+
+***********************************************************************
+Fatal NI connect error 12545, connecting to:
+ (DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=tecno7)(PORT=1521))(CONNECT_DATA=(SERVICE_NAME=ora7.tecnomapas.mt.br)(CID=(PROGRAM=C:\oracle\ora92\bin\RMAN.EXE)(HOST=TECNO3)(USER=oracle))))
+
+  VERSION INFORMATION:
+	TNS for 32-bit Windows: Version 9.2.0.4.0 - Production
+	Windows NT TCP/IP NT Protocol Adapter for 32-bit Windows: Version 9.2.0.4.0 - Production
+  Time: 18-NOV-2004 02:01:40
+  Tracing not turned on.
+  Tns error struct:
+    nr err code: 0
+    ns main err code: 12545
+    TNS-12545: A conexão falhou porque o objeto ou host de destino não existe
+    ns secondary err code: 12560
+    nt main err code: 515
+    TNS-00515: A conexão falhou porque o objeto ou host de destino não existe
+    nt secondary err code: 1001
+    nt OS err code: 0
+
+
+***********************************************************************
+Fatal NI connect error 12545, connecting to:
+ (DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=tecno-net1)(PORT=1521))(CONNECT_DATA=(SERVICE_NAME=oranet1.tecnomapas.mt.br)(CID=(PROGRAM=C:\oracle\ora92\bin\RMAN.EXE)(HOST=TECNO3)(USER=oracle))))
+
+  VERSION INFORMATION:
+	TNS for 32-bit Windows: Version 9.2.0.4.0 - Production
+	Windows NT TCP/IP NT Protocol Adapter for 32-bit Windows: Version 9.2.0.4.0 - Production
+  Time: 18-NOV-2004 02:02:20
+  Tracing not turned on.
+  Tns error struct:
+    nr err code: 0
+    ns main err code: 12545
+    TNS-12545: A conexão falhou porque o objeto ou host de destino não existe
+    ns secondary err code: 12560
+    nt main err code: 515
+    TNS-00515: A conexão falhou porque o objeto ou host de destino não existe
+    nt secondary err code: 1001
+    nt OS err code: 0
+
+
+***********************************************************************
+Fatal NI connect error 12545, connecting to:
+ (DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=apis-server2)(PORT=1521))(CONNECT_DATA=(SERVICE_NAME=apisora2.tecnomapas.mt.br)(CID=(PROGRAM=C:\oracle\ora92\bin\RMAN.EXE)(HOST=TECNO3)(USER=oracle))))
+
+  VERSION INFORMATION:
+	TNS for 32-bit Windows: Version 9.2.0.4.0 - Production
+	Windows NT TCP/IP NT Protocol Adapter for 32-bit Windows: Version 9.2.0.4.0 - Production
+  Time: 24-NOV-2004 02:00:06
+  Tracing not turned on.
+  Tns error struct:
+    nr err code: 0
+    ns main err code: 12545
+    TNS-12545: A conexão falhou porque o objeto ou host de destino não existe
+    ns secondary err code: 12560
+    nt main err code: 515
+    TNS-00515: A conexão falhou porque o objeto ou host de destino não existe
+    nt secondary err code: 1001
+    nt OS err code: 0
+
+
+***********************************************************************
+Fatal NI connect error 12545, connecting to:
+ (DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=apis-server2)(PORT=1521))(CONNECT_DATA=(SERVICE_NAME=apisora2.tecnomapas.mt.br)(CID=(PROGRAM=C:\oracle\ora92\bin\RMAN.EXE)(HOST=TECNO3)(USER=oracle))))
+
+  VERSION INFORMATION:
+	TNS for 32-bit Windows: Version 9.2.0.4.0 - Production
+	Windows NT TCP/IP NT Protocol Adapter for 32-bit Windows: Version 9.2.0.4.0 - Production
+  Time: 07-DEZ-2004 02:01:16
+  Tracing not turned on.
+  Tns error struct:
+    nr err code: 0
+    ns main err code: 12545
+    TNS-12545: A conexão falhou porque o objeto ou host de destino não existe
+    ns secondary err code: 12560
+    nt main err code: 515
+    TNS-00515: A conexão falhou porque o objeto ou host de destino não existe
+    nt secondary err code: 1001
+    nt OS err code: 0
+
+
+***********************************************************************
+Fatal NI connect error 12545, connecting to:
+ (DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=tecno7)(PORT=1521))(CONNECT_DATA=(SERVICE_NAME=ora7.tecnomapas.mt.br)(CID=(PROGRAM=C:\oracle\ora92\bin\RMAN.EXE)(HOST=TECNO3)(USER=oracle))))
+
+  VERSION INFORMATION:
+	TNS for 32-bit Windows: Version 9.2.0.4.0 - Production
+	Windows NT TCP/IP NT Protocol Adapter for 32-bit Windows: Version 9.2.0.4.0 - Production
+  Time: 07-DEZ-2004 02:01:57
+  Tracing not turned on.
+  Tns error struct:
+    nr err code: 0
+    ns main err code: 12545
+    TNS-12545: A conexão falhou porque o objeto ou host de destino não existe
+    ns secondary err code: 12560
+    nt main err code: 515
+    TNS-00515: A conexão falhou porque o objeto ou host de destino não existe
+    nt secondary err code: 1001
+    nt OS err code: 0
+
+
+***********************************************************************
+Fatal NI connect error 12545, connecting to:
+ (DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=tecno-net1)(PORT=1521))(CONNECT_DATA=(SERVICE_NAME=oranet1.tecnomapas.mt.br)(CID=(PROGRAM=C:\oracle\ora92\bin\RMAN.EXE)(HOST=TECNO3)(USER=oracle))))
+
+  VERSION INFORMATION:
+	TNS for 32-bit Windows: Version 9.2.0.4.0 - Production
+	Windows NT TCP/IP NT Protocol Adapter for 32-bit Windows: Version 9.2.0.4.0 - Production
+  Time: 07-DEZ-2004 02:02:38
+  Tracing not turned on.
+  Tns error struct:
+    nr err code: 0
+    ns main err code: 12545
+    TNS-12545: A conexão falhou porque o objeto ou host de destino não existe
+    ns secondary err code: 12560
+    nt main err code: 515
+    TNS-00515: A conexão falhou porque o objeto ou host de destino não existe
+    nt secondary err code: 1001
+    nt OS err code: 0
+
+
+***********************************************************************
+Fatal NI connect error 12535, connecting to:
+ (DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=tecno-net1)(PORT=1521))(CONNECT_DATA=(SERVICE_NAME=oranet1.tecnomapas.mt.br)(CID=(PROGRAM=C:\oracle\ora92\bin\RMAN.EXE)(HOST=TECNO3)(USER=oracle))))
+
+  VERSION INFORMATION:
+	TNS for 32-bit Windows: Version 9.2.0.4.0 - Production
+	Windows NT TCP/IP NT Protocol Adapter for 32-bit Windows: Version 9.2.0.4.0 - Production
+  Time: 15-DEZ-2004 03:23:23
+  Tracing not turned on.
+  Tns error struct:
+    nr err code: 0
+    ns main err code: 12535
+    TNS-12535: TNS:operação sofreu timeout
+    ns secondary err code: 12560
+    nt main err code: 505
+    TNS-00505: Operação sofreu timeout
+    nt secondary err code: 60
+    nt OS err code: 0
+
+
+***********************************************************************
+Fatal NI connect error 12535, connecting to:
+ (DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=tecno-net1)(PORT=1521))(CONNECT_DATA=(SERVICE_NAME=oranet1.tecnomapas.mt.br)(CID=(PROGRAM=C:\oracle\ora92\bin\RMAN.EXE)(HOST=TECNO3)(USER=oracle))))
+
+  VERSION INFORMATION:
+	TNS for 32-bit Windows: Version 9.2.0.4.0 - Production
+	Windows NT TCP/IP NT Protocol Adapter for 32-bit Windows: Version 9.2.0.4.0 - Production
+  Time: 16-DEZ-2004 05:52:29
+  Tracing not turned on.
+  Tns error struct:
+    nr err code: 0
+    ns main err code: 12535
+    TNS-12535: TNS:operação sofreu timeout
+    ns secondary err code: 12560
+    nt main err code: 505
+    TNS-00505: Operação sofreu timeout
+    nt secondary err code: 60
+    nt OS err code: 0
+
+
+***********************************************************************
+Fatal NI connect error 12535, connecting to:
+ (DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=tecno-net1)(PORT=1521))(CONNECT_DATA=(SERVICE_NAME=oranet1.tecnomapas.mt.br)(CID=(PROGRAM=C:\oracle\ora92\bin\RMAN.EXE)(HOST=TECNO3)(USER=oracle))))
+
+  VERSION INFORMATION:
+	TNS for 32-bit Windows: Version 9.2.0.4.0 - Production
+	Windows NT TCP/IP NT Protocol Adapter for 32-bit Windows: Version 9.2.0.4.0 - Production
+  Time: 17-DEZ-2004 05:55:14
+  Tracing not turned on.
+  Tns error struct:
+    nr err code: 0
+    ns main err code: 12535
+    TNS-12535: TNS:operação sofreu timeout
+    ns secondary err code: 12560
+    nt main err code: 505
+    TNS-00505: Operação sofreu timeout
+    nt secondary err code: 60
+    nt OS err code: 0
+
+
+***********************************************************************
+Fatal NI connect error 12535, connecting to:
+ (DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=tecno-net1)(PORT=1521))(CONNECT_DATA=(SERVICE_NAME=oranet1.tecnomapas.mt.br)(CID=(PROGRAM=C:\oracle\ora92\bin\RMAN.EXE)(HOST=TECNO3)(USER=oracle))))
+
+  VERSION INFORMATION:
+	TNS for 32-bit Windows: Version 9.2.0.4.0 - Production
+	Windows NT TCP/IP NT Protocol Adapter for 32-bit Windows: Version 9.2.0.4.0 - Production
+  Time: 18-DEZ-2004 05:57:23
+  Tracing not turned on.
+  Tns error struct:
+    nr err code: 0
+    ns main err code: 12535
+    TNS-12535: TNS:operação sofreu timeout
+    ns secondary err code: 12560
+    nt main err code: 505
+    TNS-00505: Operação sofreu timeout
+    nt secondary err code: 60
+    nt OS err code: 0
+
+
+***********************************************************************
+Fatal NI connect error 12535, connecting to:
+ (DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=tecno-net1)(PORT=1521))(CONNECT_DATA=(SERVICE_NAME=oranet1.tecnomapas.mt.br)(CID=(PROGRAM=C:\oracle\ora92\bin\RMAN.EXE)(HOST=TECNO3)(USER=oracle))))
+
+  VERSION INFORMATION:
+	TNS for 32-bit Windows: Version 9.2.0.4.0 - Production
+	Windows NT TCP/IP NT Protocol Adapter for 32-bit Windows: Version 9.2.0.4.0 - Production
+  Time: 19-DEZ-2004 05:25:46
+  Tracing not turned on.
+  Tns error struct:
+    nr err code: 0
+    ns main err code: 12535
+    TNS-12535: TNS:operação sofreu timeout
+    ns secondary err code: 12560
+    nt main err code: 505
+    TNS-00505: Operação sofreu timeout
+    nt secondary err code: 60
+    nt OS err code: 0
+
+
+***********************************************************************
+Fatal NI connect error 12535, connecting to:
+ (DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=tecno-net1)(PORT=1521))(CONNECT_DATA=(SERVICE_NAME=oranet1.tecnomapas.mt.br)(CID=(PROGRAM=C:\oracle\ora92\bin\RMAN.EXE)(HOST=TECNO3)(USER=oracle))))
+
+  VERSION INFORMATION:
+	TNS for 32-bit Windows: Version 9.2.0.4.0 - Production
+	Windows NT TCP/IP NT Protocol Adapter for 32-bit Windows: Version 9.2.0.4.0 - Production
+  Time: 20-DEZ-2004 04:32:10
+  Tracing not turned on.
+  Tns error struct:
+    nr err code: 0
+    ns main err code: 12535
+    TNS-12535: TNS:operação sofreu timeout
+    ns secondary err code: 12560
+    nt main err code: 505
+    TNS-00505: Operação sofreu timeout
+    nt secondary err code: 60
+    nt OS err code: 0
+
+
+***********************************************************************
+Fatal NI connect error 12545, connecting to:
+ (DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=apis-server2)(PORT=1521))(CONNECT_DATA=(SERVICE_NAME=apisora2.tecnomapas.mt.br)(CID=(PROGRAM=C:\oracle\ora92\bin\RMAN.EXE)(HOST=TECNO3)(USER=oracle))))
+
+  VERSION INFORMATION:
+	TNS for 32-bit Windows: Version 9.2.0.4.0 - Production
+	Windows NT TCP/IP NT Protocol Adapter for 32-bit Windows: Version 9.2.0.4.0 - Production
+  Time: 09-JAN-2005 02:00:59
+  Tracing not turned on.
+  Tns error struct:
+    nr err code: 0
+    ns main err code: 12545
+    TNS-12545: A conexão falhou porque o objeto ou host de destino não existe
+    ns secondary err code: 12560
+    nt main err code: 515
+    TNS-00515: A conexão falhou porque o objeto ou host de destino não existe
+    nt secondary err code: 1001
+    nt OS err code: 0
+
+
+***********************************************************************
+Fatal NI connect error 12545, connecting to:
+ (DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=tecno7)(PORT=1521))(CONNECT_DATA=(SERVICE_NAME=ora7.tecnomapas.mt.br)(CID=(PROGRAM=C:\oracle\ora92\bin\RMAN.EXE)(HOST=TECNO3)(USER=oracle))))
+
+  VERSION INFORMATION:
+	TNS for 32-bit Windows: Version 9.2.0.4.0 - Production
+	Windows NT TCP/IP NT Protocol Adapter for 32-bit Windows: Version 9.2.0.4.0 - Production
+  Time: 09-JAN-2005 02:01:39
+  Tracing not turned on.
+  Tns error struct:
+    nr err code: 0
+    ns main err code: 12545
+    TNS-12545: A conexão falhou porque o objeto ou host de destino não existe
+    ns secondary err code: 12560
+    nt main err code: 515
+    TNS-00515: A conexão falhou porque o objeto ou host de destino não existe
+    nt secondary err code: 1001
+    nt OS err code: 0
+
+
+***********************************************************************
+Fatal NI connect error 12545, connecting to:
+ (DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=tecno-net1)(PORT=1521))(CONNECT_DATA=(SERVICE_NAME=oranet1.tecnomapas.mt.br)(CID=(PROGRAM=C:\oracle\ora92\bin\RMAN.EXE)(HOST=TECNO3)(USER=oracle))))
+
+  VERSION INFORMATION:
+	TNS for 32-bit Windows: Version 9.2.0.4.0 - Production
+	Windows NT TCP/IP NT Protocol Adapter for 32-bit Windows: Version 9.2.0.4.0 - Production
+  Time: 09-JAN-2005 02:02:20
+  Tracing not turned on.
+  Tns error struct:
+    nr err code: 0
+    ns main err code: 12545
+    TNS-12545: A conexão falhou porque o objeto ou host de destino não existe
+    ns secondary err code: 12560
+    nt main err code: 515
+    TNS-00515: A conexão falhou porque o objeto ou host de destino não existe
+    nt secondary err code: 1001
+    nt OS err code: 0
+
+
+***********************************************************************
+Fatal NI connect error 12545, connecting to:
+ (DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=apis-server2)(PORT=1521))(CONNECT_DATA=(SERVICE_NAME=apisora2.tecnomapas.mt.br)(CID=(PROGRAM=C:\oracle\ora92\bin\RMAN.EXE)(HOST=TECNO3)(USER=oracle))))
+
+  VERSION INFORMATION:
+	TNS for 32-bit Windows: Version 9.2.0.4.0 - Production
+	Windows NT TCP/IP NT Protocol Adapter for 32-bit Windows: Version 9.2.0.4.0 - Production
+  Time: 10-JAN-2005 02:00:03
+  Tracing not turned on.
+  Tns error struct:
+    nr err code: 0
+    ns main err code: 12545
+    TNS-12545: A conexão falhou porque o objeto ou host de destino não existe
+    ns secondary err code: 12560
+    nt main err code: 515
+    TNS-00515: A conexão falhou porque o objeto ou host de destino não existe
+    nt secondary err code: 1001
+    nt OS err code: 0
+
+
+***********************************************************************
+Fatal NI connect error 12535, connecting to:
+ (DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=tecno7)(PORT=1521))(CONNECT_DATA=(SERVICE_NAME=ora7.tecnomapas.mt.br)(CID=(PROGRAM=C:\oracle\ora92\bin\RMAN.EXE)(HOST=TECNO3)(USER=oracle))))
+
+  VERSION INFORMATION:
+	TNS for 32-bit Windows: Version 9.2.0.4.0 - Production
+	Windows NT TCP/IP NT Protocol Adapter for 32-bit Windows: Version 9.2.0.4.0 - Production
+  Time: 10-JAN-2005 02:00:39
+  Tracing not turned on.
+  Tns error struct:
+    nr err code: 0
+    ns main err code: 12535
+    TNS-12535: TNS:operação sofreu timeout
+    ns secondary err code: 12560
+    nt main err code: 505
+    TNS-00505: Operação sofreu timeout
+    nt secondary err code: 60
+    nt OS err code: 0
+
+
+***********************************************************************
+Fatal NI connect error 12535, connecting to:
+ (DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=tecno-net1)(PORT=1521))(CONNECT_DATA=(SERVICE_NAME=oranet1.tecnomapas.mt.br)(CID=(PROGRAM=C:\oracle\ora92\bin\RMAN.EXE)(HOST=TECNO3)(USER=oracle))))
+
+  VERSION INFORMATION:
+	TNS for 32-bit Windows: Version 9.2.0.4.0 - Production
+	Windows NT TCP/IP NT Protocol Adapter for 32-bit Windows: Version 9.2.0.4.0 - Production
+  Time: 10-JAN-2005 02:01:26
+  Tracing not turned on.
+  Tns error struct:
+    nr err code: 0
+    ns main err code: 12535
+    TNS-12535: TNS:operação sofreu timeout
+    ns secondary err code: 12560
+    nt main err code: 505
+    TNS-00505: Operação sofreu timeout
+    nt secondary err code: 60
+    nt OS err code: 0
+
+
+***********************************************************************
+Fatal NI connect error 12535, connecting to:
+ (DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=tecno-net1)(PORT=1521))(CONNECT_DATA=(SERVICE_NAME=oranet1.tecnomapas.mt.br)(CID=(PROGRAM=C:\oracle\ora92\bin\RMAN.EXE)(HOST=TECNO3)(USER=oracle))))
+
+  VERSION INFORMATION:
+	TNS for 32-bit Windows: Version 9.2.0.4.0 - Production
+	Windows NT TCP/IP NT Protocol Adapter for 32-bit Windows: Version 9.2.0.4.0 - Production
+  Time: 30-JAN-2005 07:21:35
+  Tracing not turned on.
+  Tns error struct:
+    nr err code: 0
+    ns main err code: 12535
+    TNS-12535: TNS:operação sofreu timeout
+    ns secondary err code: 12560
+    nt main err code: 505
+    TNS-00505: Operação sofreu timeout
+    nt secondary err code: 60
+    nt OS err code: 0
+
+
+***********************************************************************
+Fatal NI connect error 12535, connecting to:
+ (DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=tecno-net1)(PORT=1521))(CONNECT_DATA=(SERVICE_NAME=oranet1.tecnomapas.mt.br)(CID=(PROGRAM=C:\oracle\ora92\bin\RMAN.EXE)(HOST=TECNO3)(USER=oracle))))
+
+  VERSION INFORMATION:
+	TNS for 32-bit Windows: Version 9.2.0.4.0 - Production
+	Windows NT TCP/IP NT Protocol Adapter for 32-bit Windows: Version 9.2.0.4.0 - Production
+  Time: 31-JAN-2005 06:08:16
+  Tracing not turned on.
+  Tns error struct:
+    nr err code: 0
+    ns main err code: 12535
+    TNS-12535: TNS:operação sofreu timeout
+    ns secondary err code: 12560
+    nt main err code: 505
+    TNS-00505: Operação sofreu timeout
+    nt secondary err code: 60
+    nt OS err code: 0
+
+
+***********************************************************************
+Fatal NI connect error 12545, connecting to:
+ (DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=apis-server3)(PORT=1521))(CONNECT_DATA=(SERVICE_NAME=apisora3.tecnomapas.mt.br)(CID=(PROGRAM=C:\oracle\ora92\bin\RMAN.EXE)(HOST=TECNO3)(USER=oracle))))
+
+  VERSION INFORMATION:
+	TNS for 32-bit Windows: Version 9.2.0.4.0 - Production
+	Windows NT TCP/IP NT Protocol Adapter for 32-bit Windows: Version 9.2.0.4.0 - Production
+  Time: 01-FEV-2005 02:01:18
+  Tracing not turned on.
+  Tns error struct:
+    nr err code: 0
+    ns main err code: 12545
+    TNS-12545: A conexão falhou porque o objeto ou host de destino não existe
+    ns secondary err code: 12560
+    nt main err code: 515
+    TNS-00515: A conexão falhou porque o objeto ou host de destino não existe
+    nt secondary err code: 1001
+    nt OS err code: 0
+
+
+***********************************************************************
+Fatal NI connect error 12545, connecting to:
+ (DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=apis-server2)(PORT=1521))(CONNECT_DATA=(SERVICE_NAME=apisora2.tecnomapas.mt.br)(CID=(PROGRAM=C:\oracle\ora92\bin\RMAN.EXE)(HOST=TECNO3)(USER=oracle))))
+
+  VERSION INFORMATION:
+	TNS for 32-bit Windows: Version 9.2.0.4.0 - Production
+	Windows NT TCP/IP NT Protocol Adapter for 32-bit Windows: Version 9.2.0.4.0 - Production
+  Time: 01-FEV-2005 02:01:58
+  Tracing not turned on.
+  Tns error struct:
+    nr err code: 0
+    ns main err code: 12545
+    TNS-12545: A conexão falhou porque o objeto ou host de destino não existe
+    ns secondary err code: 12560
+    nt main err code: 515
+    TNS-00515: A conexão falhou porque o objeto ou host de destino não existe
+    nt secondary err code: 1001
+    nt OS err code: 0
+
+
+***********************************************************************
+Fatal NI connect error 12545, connecting to:
+ (DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=tecno7)(PORT=1521))(CONNECT_DATA=(SERVICE_NAME=ora7.tecnomapas.mt.br)(CID=(PROGRAM=C:\oracle\ora92\bin\RMAN.EXE)(HOST=TECNO3)(USER=oracle))))
+
+  VERSION INFORMATION:
+	TNS for 32-bit Windows: Version 9.2.0.4.0 - Production
+	Windows NT TCP/IP NT Protocol Adapter for 32-bit Windows: Version 9.2.0.4.0 - Production
+  Time: 01-FEV-2005 02:02:39
+  Tracing not turned on.
+  Tns error struct:
+    nr err code: 0
+    ns main err code: 12545
+    TNS-12545: A conexão falhou porque o objeto ou host de destino não existe
+    ns secondary err code: 12560
+    nt main err code: 515
+    TNS-00515: A conexão falhou porque o objeto ou host de destino não existe
+    nt secondary err code: 1001
+    nt OS err code: 0
+
+
+***********************************************************************
+Fatal NI connect error 12545, connecting to:
+ (DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=tecno-net1)(PORT=1521))(CONNECT_DATA=(SERVICE_NAME=oranet1.tecnomapas.mt.br)(CID=(PROGRAM=C:\oracle\ora92\bin\RMAN.EXE)(HOST=TECNO3)(USER=oracle))))
+
+  VERSION INFORMATION:
+	TNS for 32-bit Windows: Version 9.2.0.4.0 - Production
+	Windows NT TCP/IP NT Protocol Adapter for 32-bit Windows: Version 9.2.0.4.0 - Production
+  Time: 01-FEV-2005 02:03:20
+  Tracing not turned on.
+  Tns error struct:
+    nr err code: 0
+    ns main err code: 12545
+    TNS-12545: A conexão falhou porque o objeto ou host de destino não existe
+    ns secondary err code: 12560
+    nt main err code: 515
+    TNS-00515: A conexão falhou porque o objeto ou host de destino não existe
+    nt secondary err code: 1001
+    nt OS err code: 0
+
+
+***********************************************************************
+Fatal NI connect error 12545, connecting to:
+ (DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=tecno-net1)(PORT=1521))(CONNECT_DATA=(SERVICE_NAME=oranet1.tecnomapas.mt.br)(CID=(PROGRAM=C:\oracle\ora92\bin\RMAN.EXE)(HOST=TECNO3)(USER=oracle))))
+
+  VERSION INFORMATION:
+	TNS for 32-bit Windows: Version 9.2.0.4.0 - Production
+	Windows NT TCP/IP NT Protocol Adapter for 32-bit Windows: Version 9.2.0.4.0 - Production
+  Time: 11-FEV-2005 05:59:51
+  Tracing not turned on.
+  Tns error struct:
+    nr err code: 0
+    ns main err code: 12545
+    TNS-12545: A conexão falhou porque o objeto ou host de destino não existe
+    ns secondary err code: 12560
+    nt main err code: 515
+    TNS-00515: A conexão falhou porque o objeto ou host de destino não existe
+    nt secondary err code: 1001
+    nt OS err code: 0
+
+
+***********************************************************************
+Fatal NI connect error 12545, connecting to:
+ (DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=apis-server2)(PORT=1521))(CONNECT_DATA=(SERVICE_NAME=apisora2.tecnomapas.mt.br)(CID=(PROGRAM=C:\oracle\ora92\bin\RMAN.EXE)(HOST=TECNO3)(USER=oracle))))
+
+  VERSION INFORMATION:
+	TNS for 32-bit Windows: Version 9.2.0.4.0 - Production
+	Windows NT TCP/IP NT Protocol Adapter for 32-bit Windows: Version 9.2.0.4.0 - Production
+  Time: 07-MAR-2005 02:22:16
+  Tracing not turned on.
+  Tns error struct:
+    nr err code: 0
+    ns main err code: 12545
+    TNS-12545: A conexão falhou porque o objeto ou host de destino não existe
+    ns secondary err code: 12560
+    nt main err code: 515
+    TNS-00515: A conexão falhou porque o objeto ou host de destino não existe
+    nt secondary err code: 1001
+    nt OS err code: 0
+
+
+***********************************************************************
+Fatal NI connect error 12535, connecting to:
+ (DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=apis-server3)(PORT=1521))(CONNECT_DATA=(SERVICE_NAME=apisora3.tecnomapas.mt.br)(CID=(PROGRAM=C:\oracle\ora92\bin\RMAN.EXE)(HOST=TECNO3)(USER=oracle))))
+
+  VERSION INFORMATION:
+	TNS for 32-bit Windows: Version 9.2.0.4.0 - Production
+	Windows NT TCP/IP NT Protocol Adapter for 32-bit Windows: Version 9.2.0.4.0 - Production
+  Time: 17-MAR-2005 02:00:25
+  Tracing not turned on.
+  Tns error struct:
+    nr err code: 0
+    ns main err code: 12535
+    TNS-12535: TNS:operação sofreu timeout
+    ns secondary err code: 12560
+    nt main err code: 505
+    TNS-00505: Operação sofreu timeout
+    nt secondary err code: 60
+    nt OS err code: 0
+
+
+***********************************************************************
+Fatal NI connect error 12545, connecting to:
+ (DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=apis-server2)(PORT=1521))(CONNECT_DATA=(SERVICE_NAME=apisora2.tecnomapas.mt.br)(CID=(PROGRAM=C:\oracle\ora92\bin\RMAN.EXE)(HOST=TECNO3)(USER=oracle))))
+
+  VERSION INFORMATION:
+	TNS for 32-bit Windows: Version 9.2.0.4.0 - Production
+	Windows NT TCP/IP NT Protocol Adapter for 32-bit Windows: Version 9.2.0.4.0 - Production
+  Time: 16-ABR-2005 02:25:17
+  Tracing not turned on.
+  Tns error struct:
+    nr err code: 0
+    ns main err code: 12545
+    TNS-12545: A conexão falhou porque o objeto ou host de destino não existe
+    ns secondary err code: 12560
+    nt main err code: 515
+    TNS-00515: A conexão falhou porque o objeto ou host de destino não existe
+    nt secondary err code: 1001
+    nt OS err code: 0

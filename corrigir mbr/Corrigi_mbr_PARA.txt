@@ -1,0 +1,6 @@
+update sde.layers t set t.minx=-855000, t.miny=-821000, t.maxx=855000, t.maxy=828000
+ where t.owner='&USER';
+commit;
+update sde.spatial_references t set t.falsex=-855000,t.falsey=-821000,t.xyunits=250
+ where t.srid in (select srid from sde.layers where owner='&USER');
+commit;

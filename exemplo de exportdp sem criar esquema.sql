@@ -1,0 +1,1 @@
+impdp system@oradev2 directory=DATA_PU MP_DIR logfile=tec.log network_link=imp schemas=tetmdmt,tetmdrascmt

@@ -1,0 +1,11 @@
+Para executar os arquivos "temp??????_mover.bat" desta pasta é necessário utilizar a seguinte sintaxe:
+
+D:\oracle\scripts\Scripts_Chamados_Manualmente> cmd /V:ON /C temp??????_mover.bat
+
+
+
+
+
+O objetivo destes .BATs é mover arquivos de um diretório para outro. O arquivo só será efetivamente
+ movido se seu código HASH estiver correto depois de copiado, se não estiver, o arquivo será apagado
+ do "destino" e permanecerá na "origem" intacto. 

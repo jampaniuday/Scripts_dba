@@ -1,0 +1,27 @@
+
+GRANT resource TO SIGLOACERVOpa;
+GRANT execute on geometria9i TO SIGLOACERVOpa;
+GRANT  execute on transformacoes TO  SIGLOACERVOpa;
+
+
+GRANT resource TO siglo_pa;
+GRANT execute on geometria9i TO siglo_pa;
+GRANT  execute on transformacoes TO siglo_pa;
+
+
+GRANT resource TO siglocredenciadopa;
+GRANT execute on geometria9i TO siglocredenciadopa;
+GRANT  execute on transformacoes TO  siglocredenciadopa;
+
+GRANT resource TO tsiglocredenciadopa;
+GRANT execute on geometria9i TO tsiglocredenciadopa;
+GRANT  execute on transformacoes TO  tsiglocredenciadopa;
+
+GRANT resource TO tsiglo_pa;
+GRANT execute on geometria9i TO tsiglo_pa;
+GRANT  execute on transformacoes TO  tsiglo_pa;
+
+
+GRANT resource TO tsigloaceRVOpa;
+GRANT execute on geometria9i TO tsigloaceRVOpa;
+GRANT  execute on transformacoes TO tsigloaceRVOpa;

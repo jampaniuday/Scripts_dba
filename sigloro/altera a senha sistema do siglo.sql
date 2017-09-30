@@ -1,0 +1,1 @@
+(id,tipo,aplicacao,login,senha,nome,situacao) values (seq_usuario.nextval, (select t.id from lov_tipo_usuario t where t.texto='System'), (select a.id from lov_aplicacao a where a.texto='siglo'),'sistema', '75587F4AA4D0F3A7ACA2E9545ECB2BFB', 'Sistema Siglo',4);

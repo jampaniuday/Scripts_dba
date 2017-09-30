@@ -1,0 +1,346 @@
+--verifica violações de transporte
+
+exec SYS.DBMS_TTS.TRANSPORT_SET_CHECK   (ts_list => 'SY900T ,SY900I ,SVM900T,SVM900I,OL900T,OL900I,DD900T,DD900I,PD900T,PD900I,PRODCTLI,PRODCTLT,PRODDTAT,PS900T,PS900I,PS900CTLI,PS900CTLT,PS900DTAI,PS900DTAT,ODDEVCONTENT,CSF_DATA,CSF_INDEX,CSF_LOB,CSF_NOLOG,KMASTER,ODDEVCONTENT1,KMASTER1,ODDEVCONTENT2,KMASTER2,SAGE_DADOS,SAGE_LOB,SAGE_INDEX2,PRODDTAI,PRD_SOAINFRA,PRD_IAS_ORASDPM,PRD_ORABAM,PRD_MDS,CSF_LOB_WS', incl_constraints => TRUE);
+
+select * from SYS.transport_set_violations;
+
+
+--cria usuarios novo banco
+
+select t.username from dba_users t where t.default_tablespace in ('SY900T' ,'SY900I' ,'SVM900T','SVM900I','OL900T','OL900I','DD900T','DD900I','PD900T','PD900I','PRODCTLI','PRODCTLT','PRODDTAT','PS900T','PS900I','PS900CTLI','PS900CTLT','PS900DTAI','PS900DTAT','ODDEVCONTENT','CSF_DATA','CSF_INDEX','CSF_LOB','CSF_NOLOG','KMASTER','ODDEVCONTENT1','KMASTER1','ODDEVCONTENT2','KMASTER2','SAGE_DADOS','SAGE_LOB','SAGE_INDEX2','PRODDTAI','PRD_SOAINFRA','PRD_IAS_ORASDPM','PRD_ORABAM','PRD_MDS','CSF_LOB_WS')
+
+expdp system directory=dd dumpfile=schemas.dmp logfile=schemas.log schemas=SVM900,PRD_ORASDPM,PD900,SAGE_HML,ODSERVER1,PRD_ORABAM,KUSER2_APP,KUSER2,ADMIN,ADMIN_APP,PRD_SOAINFRA,CSF_INT,CSF_WORK,SAGE_TREINA,PRODCTL,CSF_OWN,OL900,PRODDTA,MARCELO_SAGE,ODSERVER,DD900,PS900CTL,PRD_MDS,SY900,PS900,KUSER_APP,KUSER1_APP,KUSER1,SAGE_PRD,PS900DTA content=metadata_only exclude=table,view,procedure,package,function 
+impd  system directory=dd dumpfile=schemas.dmp logfile=schemas.log
+
+--alterando os tbs para read only
+
+select 'alter tablespace ' || t.TABLESPACE_NAME || ' read only;'
+  from dba_tablespaces t
+ where t.TABLESPACE_NAME in ('SY900T',                             'SY900I',                             'SVM900T',                             'SVM900I',                            'OL900T',
+                             'OL900I',                             'DD900T',                             'DD900I',                             'PD900T',                             'PD900I',
+                             'PRODCTLI',                             'PRODCTLT',                             'PRODDTAT',                             'PS900T',                             'PS900I',
+                             'PS900CTLI',                             'PS900CTLT',                             'PS900DTAI',                             'PS900DTAT',                             'ODDEVCONTENT',
+                             'CSF_DATA',                             'CSF_INDEX',                             'CSF_LOB',                             'CSF_NOLOG',                             'KMASTER',
+                             'ODDEVCONTENT1',                             'KMASTER1',                             'ODDEVCONTENT2',                             'KMASTER2',                             'SAGE_DADOS',
+                             'SAGE_LOB',                                                               'SAGE_INDEX2',                             'PRODDTAI',                             'PRD_SOAINFRA',
+                             'PRD_IAS_ORASDPM',                             'PRD_ORABAM',                             'PRD_MDS',                             'CSF_LOB_WS')
+
+
+alter tablespace SY900T read only;
+alter tablespace SY900I read only;
+alter tablespace SVM900T read only;
+alter tablespace SVM900I read only;
+alter tablespace OL900T read only;
+alter tablespace OL900I read only;
+alter tablespace DD900T read only;
+alter tablespace DD900I read only;
+alter tablespace PD900T read only;
+alter tablespace PD900I read only;
+alter tablespace PRODCTLI read only;
+alter tablespace PRODCTLT read only;
+alter tablespace PRODDTAT read only;
+alter tablespace PS900T read only;
+alter tablespace PS900I read only;
+alter tablespace PS900CTLI read only;
+alter tablespace PS900CTLT read only;
+alter tablespace PS900DTAI read only;
+alter tablespace PS900DTAT read only;
+alter tablespace ODDEVCONTENT read only;
+alter tablespace CSF_DATA read only;
+alter tablespace CSF_INDEX read only;
+alter tablespace CSF_LOB read only;
+alter tablespace CSF_NOLOG read only;
+alter tablespace KMASTER read only;
+alter tablespace ODDEVCONTENT1 read only;
+alter tablespace KMASTER1 read only;
+alter tablespace ODDEVCONTENT2 read only;
+alter tablespace KMASTER2 read only;
+alter tablespace SAGE_DADOS read only;
+alter tablespace SAGE_LOB read only;
+alter tablespace SAGE_INDEX2 read only;
+alter tablespace PRODDTAI read only;
+alter tablespace PRD_SOAINFRA read only;
+alter tablespace PRD_IAS_ORASDPM read only;
+alter tablespace PRD_ORABAM read only;
+alter tablespace PRD_MDS read only;
+alter tablespace CSF_LOB_WS read only;
+
+--exportando o metadados
+
+expdp system directory=dd dumpfile=transport_tablespaces.dmp logfile=transport_tablespaces.log transport_tablespaces=SY900T ,SY900I ,SVM900T,SVM900I,OL900T,OL900I,DD900T,DD900I,PD900T,PD900I,PRODCTLI,PRODCTLT,PRODDTAT,PS900T,PS900I,PS900CTLI,PS900CTLT,PS900DTAI,PS900DTAT,ODDEVCONTENT,CSF_DATA,CSF_INDEX,CSF_LOB,CSF_NOLOG,KMASTER,ODDEVCONTENT1,KMASTER1,ODDEVCONTENT2,KMASTER2,SAGE_DADOS,SAGE_LOB,SAGE_INDEX2,PRODDTAI,PRD_SOAINFRA,PRD_IAS_ORASDPM,PRD_ORABAM,PRD_MDS,CSF_LOB_WS
+
+--alterando tbs para escrita
+
+
+select 'alter tablespace ' || t.TABLESPACE_NAME || ' read write;;'
+  from dba_tablespaces t
+ where t.TABLESPACE_NAME in ('SY900T',
+                             'SY900I',
+                             'SVM900T',
+                             'SVM900I',
+                             'OL900T',
+                             'OL900I',
+                             'DD900T',
+                             'DD900I',
+                             'PD900T',
+                             'PD900I',
+                             'PRODCTLI',
+                             'PRODCTLT',
+                             'PRODDTAT',
+                             'PS900T',
+                             'PS900I',
+                             'PS900CTLI',
+                             'PS900CTLT',
+                             'PS900DTAI',
+                             'PS900DTAT',
+                             'ODDEVCONTENT',
+                             'CSF_DATA',
+                             'CSF_INDEX',
+                             'CSF_LOB',
+                             'CSF_NOLOG',
+                             'KMASTER',
+                             'ODDEVCONTENT1',
+                             'KMASTER1',
+                             'ODDEVCONTENT2',
+                             'KMASTER2',
+                             'SAGE_DADOS',
+                             'SAGE_LOB',
+                             'SAGE_INDEX2',
+                             'PRODDTAI',
+                             'PRD_SOAINFRA',
+                             'PRD_IAS_ORASDPM',
+                             'PRD_ORABAM',
+                             'PRD_MDS',
+                             'CSF_LOB_WS')
+
+alter tablespace SY900T read write;
+alter tablespace SY900I read write;
+alter tablespace SVM900T read write;
+alter tablespace SVM900I read write;
+alter tablespace OL900T read write;
+alter tablespace OL900I read write;
+alter tablespace DD900T read write;
+alter tablespace DD900I read write;
+alter tablespace PD900T read write;
+alter tablespace PD900I read write;
+alter tablespace PRODCTLI read write;
+alter tablespace PRODCTLT read write;
+alter tablespace PRODDTAT read write;
+alter tablespace PS900T read write;
+alter tablespace PS900I read write;
+alter tablespace PS900CTLI read write;
+alter tablespace PS900CTLT read write;
+alter tablespace PS900DTAI read write;
+alter tablespace PS900DTAT read write;
+alter tablespace ODDEVCONTENT read write;
+alter tablespace CSF_DATA read write;
+alter tablespace CSF_INDEX read write;
+alter tablespace CSF_LOB read write;
+alter tablespace CSF_NOLOG read write;
+alter tablespace KMASTER read write;
+alter tablespace ODDEVCONTENT1 read write;
+alter tablespace KMASTER1 read write;
+alter tablespace ODDEVCONTENT2 read write;
+alter tablespace KMASTER2 read write;
+alter tablespace SAGE_DADOS read write;
+alter tablespace SAGE_LOB read write;
+alter tablespace SAGE_INDEX2 read write;
+alter tablespace PRODDTAI read write;
+alter tablespace PRD_SOAINFRA read write;
+alter tablespace PRD_IAS_ORASDPM read write;
+alter tablespace PRD_ORABAM read write;
+alter tablespace PRD_MDS read write;
+alter tablespace CSF_LOB_WS read write;
+
+--importando o metadados no banco novo
+impdp system directory=dd dumpfile=transport_tablespaces.dmp logfile=transport_tablespaces.log
+transport_datafiles='/u00/oracle/oradata/jde/data/csf_data.dbf',
+'/u00/oracle/oradata/jde/data/csf_lob.dbf',
+'/u00/oracle/oradata/jde/data/csf_nolog.dbf',
+'/u00/oracle/oradata/jde/data/dd900t01.dbf',
+'/u00/oracle/oradata/jde/data/KMASTER.dbf',
+'/u00/oracle/oradata/jde/data/KMASTER1.dbf',
+'/u00/oracle/oradata/jde/data/KMASTER2.dbf',
+'/u00/oracle/oradata/jde/data/ODDevContent.dbf',
+'/u00/oracle/oradata/jde/data/ODDEVCONTENT1.dbf',
+'/u00/oracle/oradata/jde/data/ODDevContent2.dbf',
+'/u00/oracle/oradata/jde/data/ol900t01.dbf',
+'/u00/oracle/oradata/jde/data/pd900t01.dbf',
+'/u00/oracle/oradata/jde/data/pd900t02.dbf',
+'/u00/oracle/oradata/jde/data/prodctlt01.dbf',
+'/u00/oracle/oradata/jde/data/proddtat01.dbf',
+'/u00/oracle/oradata/jde/data/proddtat02.dbf',
+'/u00/oracle/oradata/jde/data/proddtat03.dbf',
+'/u00/oracle/oradata/jde/data/proddtat04.dbf',
+'/u00/oracle/oradata/jde/data/proddtat05.dbf',
+'/u00/oracle/oradata/jde/data/proddtat06.dbf',
+'/u00/oracle/oradata/jde/data/proddtat07.dbf',
+'/u00/oracle/oradata/jde/data/proddtat08.dbf',
+'/u00/oracle/oradata/jde/data/proddtat09.dbf',
+'/u00/oracle/oradata/jde/data/proddtat10.dbf',
+'/u00/oracle/oradata/jde/data/proddtat11.dbf',
+'/u00/oracle/oradata/jde/data/proddtat12.dbf',
+'/u00/oracle/oradata/jde/data/proddtat13.dbf',
+'/u00/oracle/oradata/jde/data/proddtat14.dbf',
+'/u00/oracle/oradata/jde/data/proddtat15.dbf',
+'/u00/oracle/oradata/jde/data/proddtat16.dbf',
+'/u00/oracle/oradata/jde/data/proddtat17.dbf',
+'/u00/oracle/oradata/jde/data/proddtat18.dbf',
+'/u00/oracle/oradata/jde/data/proddtat22.dbf',
+'/u00/oracle/oradata/jde/data/proddtat66.dbf',
+'/u00/oracle/oradata/jde/data/ps900ctlt01.dbf',
+'/u00/oracle/oradata/jde/data/ps900dtat01.dbf',
+'/u00/oracle/oradata/jde/data/ps900t01.dbf',
+'/u00/oracle/oradata/jde/data/ps900t02.dbf',
+'/u00/oracle/oradata/jde/data/sage_dados_01.dbf',
+'/u00/oracle/oradata/jde/data/sage_lob_01.dbf',
+'/u00/oracle/oradata/jde/data/svm900t01.dbf',
+'/u00/oracle/oradata/jde/data/sy900t01.dbf',
+'/u00/oracle/oradata/jde/data2/proddtat19.dbf',
+'/u00/oracle/oradata/jde/data2/proddtat20.dbf',
+'/u00/oracle/oradata/jde/data2/proddtat21.dbf',
+'/u00/oracle/oradata/jde/data2/proddtat23.dbf',
+'/u00/oracle/oradata/jde/data2/proddtat24.dbf',
+'/u00/oracle/oradata/jde/data2/proddtat25.dbf',
+'/u00/oracle/oradata/jde/data2/proddtat26.dbf',
+'/u00/oracle/oradata/jde/data2/proddtat27.dbf',
+'/u00/oracle/oradata/jde/data2/proddtat28.dbf',
+'/u00/oracle/oradata/jde/data2/proddtat29.dbf',
+'/u00/oracle/oradata/jde/data2/proddtat30.dbf',
+'/u00/oracle/oradata/jde/data2/proddtat55.dbf',
+'/u00/oracle/oradata/jde/data3/cfs_data02.dbf',
+'/u00/oracle/oradata/jde/data3/dd900t02.dbf',
+'/u00/oracle/oradata/jde/data3/ODDevContent02.dbf',
+'/u00/oracle/oradata/jde/data3/ODDevContent202.dbf',
+'/u00/oracle/oradata/jde/data3/pd900t03.dbf',
+'/u00/oracle/oradata/jde/data3/prodctlt02.dbf',
+'/u00/oracle/oradata/jde/data3/proddtat31.dbf',
+'/u00/oracle/oradata/jde/data3/proddtat32.dbf',
+'/u00/oracle/oradata/jde/data3/proddtat33.dbf',
+'/u00/oracle/oradata/jde/data3/proddtat34.dbf',
+'/u00/oracle/oradata/jde/data3/proddtat35.dbf',
+'/u00/oracle/oradata/jde/data3/proddtat36.dbf',
+'/u00/oracle/oradata/jde/data3/ps900ctlt02.dbf',
+'/u00/oracle/oradata/jde/data3/sage_dados_02.dbf',
+'/u00/oracle/oradata/jde/data3/svm900t01.dbf',
+'/u00/oracle/oradata/jde/data3/sy900i01.dbf',
+'/u00/oracle/oradata/jde/data3/sy900t02.dbf',
+'/u00/oracle/oradata/jde/data4/csf_data03.dbf',
+'/u00/oracle/oradata/jde/data4/proddtai2_16.dbf',
+'/u00/oracle/oradata/jde/data4/proddtai2_17.dbf',
+'/u00/oracle/oradata/jde/data4/proddtai2_18.dbf',
+'/u00/oracle/oradata/jde/data4/proddtat37.dbf',
+'/u00/oracle/oradata/jde/data4/proddtat38.dbf',
+'/u00/oracle/oradata/jde/data4/proddtat39.dbf',
+'/u00/oracle/oradata/jde/data4/proddtat40.dbf',
+'/u00/oracle/oradata/jde/data4/proddtat41.dbf',
+'/u00/oracle/oradata/jde/data4/proddtat42.dbf',
+'/u00/oracle/oradata/jde/data4/proddtat43.dbf',
+'/u00/oracle/oradata/jde/data4/proddtat44.dbf',
+'/u00/oracle/oradata/jde/data4/proddtat45.dbf',
+'/u00/oracle/oradata/jde/data4/proddtat46.dbf',
+'/u00/oracle/oradata/jde/data4/proddtat47.dbf',
+'/u00/oracle/oradata/jde/data4/proddtat48.dbf',
+'/u00/oracle/oradata/jde/data4/proddtat49.dbf',
+'/u00/oracle/oradata/jde/data4/proddtat50.dbf',
+'/u00/oracle/oradata/jde/data4/proddtat51.dbf',
+'/u00/oracle/oradata/jde/data4/proddtat52.dbf',
+'/u00/oracle/oradata/jde/data4/proddtat53.dbf',
+'/u00/oracle/oradata/jde/data4/proddtat54.dbf',
+'/u00/oracle/oradata/jde/data5/csf_data04.dbf',
+'/u00/oracle/oradata/jde/data5/csf_data05.dbf',
+'/u00/oracle/oradata/jde/data5/csf_index2.dbf',
+'/u00/oracle/oradata/jde/data5/csf_index3.dbf',
+'/u00/oracle/oradata/jde/data5/proddtai2_18.dbf',
+'/u00/oracle/oradata/jde/data5/proddtai2_19.dbf',
+'/u00/oracle/oradata/jde/data5/proddtai2_20.dbf',
+'/u00/oracle/oradata/jde/data5/proddtai2_21.dbf',
+'/u00/oracle/oradata/jde/data5/proddtai2_22.dbf',
+'/u00/oracle/oradata/jde/data5/proddtai2_23.dbf',
+'/u00/oracle/oradata/jde/data5/proddtai2_24.dbf',
+'/u00/oracle/oradata/jde/data5/proddtai2_26.dbf',
+'/u00/oracle/oradata/jde/data5/proddtat55.dbf',
+'/u00/oracle/oradata/jde/data5/proddtat56.dbf',
+'/u00/oracle/oradata/jde/data5/proddtat57.dbf',
+'/u00/oracle/oradata/jde/data5/proddtat58.dbf',
+'/u00/oracle/oradata/jde/data5/proddtat59.dbf',
+'/u00/oracle/oradata/jde/data5/proddtat60.dbf',
+'/u00/oracle/oradata/jde/data5/proddtat61.dbf',
+'/u00/oracle/oradata/jde/data5/proddtat62.dbf',
+'/u00/oracle/oradata/jde/data5/proddtat63.dbf',
+'/u00/oracle/oradata/jde/data5/proddtat64.dbf',
+'/u00/oracle/oradata/jde/data5/proddtat65.dbf',
+'/u00/oracle/oradata/jde/data5/proddtat66.dbf',
+'/u00/oracle/oradata/jde/data5/proddtat67.dbf',
+'/u00/oracle/oradata/jde/data5/proddtat68.dbf',
+'/u00/oracle/oradata/jde/data5/proddtat69.dbf',
+'/u00/oracle/oradata/jde/data5/proddtat70.dbf',
+'/u00/oracle/oradata/jde/data5/proddtat71.dbf',
+'/u00/oracle/oradata/jde/data5/proddtat72.dbf',
+'/u00/oracle/oradata/jde/data6/csf_data06.dbf',
+'/u00/oracle/oradata/jde/data6/csf_data07.dbf',
+'/u00/oracle/oradata/jde/data6/csf_data08.dbf',
+'/u00/oracle/oradata/jde/data6/csf_index4',
+'/u00/oracle/oradata/jde/data6/csf_index5.dbf',
+'/u00/oracle/oradata/jde/data6/CSF_LOB_WS.dbf',
+'/u00/oracle/oradata/jde/data6/dd900i01_02.dbf',
+'/u00/oracle/oradata/jde/data6/ol900i01_02.dbf',
+'/u00/oracle/oradata/jde/data6/pd900i01_02.dbf',
+'/u00/oracle/oradata/jde/data6/prodctli01_02.dbf',
+'/u00/oracle/oradata/jde/data6/proddtai2_28.dbf',
+'/u00/oracle/oradata/jde/data6/proddtai2_29.dbf',
+'/u00/oracle/oradata/jde/data6/proddtai2_30.dbf',
+'/u00/oracle/oradata/jde/data6/proddtai2_31.dbf',
+'/u00/oracle/oradata/jde/data6/proddtai2_32.dbf',
+'/u00/oracle/oradata/jde/data6/proddtai2_33.dbf',
+'/u00/oracle/oradata/jde/data6/proddtat74.dbf',
+'/u00/oracle/oradata/jde/data6/proddtat75.dbf',
+'/u00/oracle/oradata/jde/data6/proddtat76.dbf',
+'/u00/oracle/oradata/jde/data6/proddtat77.dbf',
+'/u00/oracle/oradata/jde/data6/proddtat78.dbf',
+'/u00/oracle/oradata/jde/data6/proddtat79.dbf',
+'/u00/oracle/oradata/jde/data6/proddtat80.dbf',
+'/u00/oracle/oradata/jde/data6/proddtat81.dbf',
+'/u00/oracle/oradata/jde/data6/proddtat82.dbf',
+'/u00/oracle/oradata/jde/data6/ps900ctli01_02.dbf',
+'/u00/oracle/oradata/jde/data6/ps900dtai01_02.dbf',
+'/u00/oracle/oradata/jde/data6/ps900i01_02.dbf',
+'/u00/oracle/oradata/jde/data6/ps900t03.dbf',
+'/u00/oracle/oradata/jde/data6/sage_index2_02.dbf',
+'/u00/oracle/oradata/jde/data6/svm900i01_02.dbf',
+'/u00/oracle/oradata/jde/data6/sy900i01_02.dbf',
+'/u00/oracle/oradata/jde/index/csf_index.dbf',
+'/u00/oracle/oradata/jde/index/dd900i01.dbf',
+'/u00/oracle/oradata/jde/index/ol900i01.dbf',
+'/u00/oracle/oradata/jde/index/pd900i01.dbf',
+'/u00/oracle/oradata/jde/index/prodctli01.dbf',
+'/u00/oracle/oradata/jde/index/proddtai2_01.dbf',
+'/u00/oracle/oradata/jde/index/proddtai2_02.dbf',
+'/u00/oracle/oradata/jde/index/proddtai2_03.dbf',
+'/u00/oracle/oradata/jde/index/proddtai2_04.dbf',
+'/u00/oracle/oradata/jde/index/proddtai2_05.dbf',
+'/u00/oracle/oradata/jde/index/proddtai2_06.dbf',
+'/u00/oracle/oradata/jde/index/proddtai2_07.dbf',
+'/u00/oracle/oradata/jde/index/proddtai2_08.dbf',
+'/u00/oracle/oradata/jde/index/proddtai2_09.dbf',
+'/u00/oracle/oradata/jde/index/proddtai2_10.dbf',
+'/u00/oracle/oradata/jde/index/proddtai2_11.dbf',
+'/u00/oracle/oradata/jde/index/proddtai2_12.dbf',
+'/u00/oracle/oradata/jde/index/proddtai2_13.dbf',
+'/u00/oracle/oradata/jde/index/proddtai2_14.dbf',
+'/u00/oracle/oradata/jde/index/proddtai2_15.dbf',
+'/u00/oracle/oradata/jde/index/proddtai2_17.dbf',
+'/u00/oracle/oradata/jde/index/proddtai2_27.dbf',
+'/u00/oracle/oradata/jde/index/proddtai_25.dbf',
+'/u00/oracle/oradata/jde/index/ps900ctli01.dbf',
+'/u00/oracle/oradata/jde/index/ps900dtai01.dbf',
+'/u00/oracle/oradata/jde/index/ps900i01.dbf',
+'/u00/oracle/oradata/jde/index/sage_index2_01.dbf',
+'/u00/oracle/oradata/jde/index/svm900i01.dbf',
+'/u00/oracle/oradata/jde/index/sy900i01.dbf',
+'/u00/oracle/oradata/jde/soasuite/PRD_iassdpm.dbf',
+'/u00/oracle/oradata/jde/soasuite/PRD_mds.dbf',
+'/u00/oracle/oradata/jde/soasuite/PRD_orabam.dbf',
+'/u00/oracle/oradata/jde/soasuite/PRD_soainfra.dbf',
+'/u00/oracle/oradata/jde/soasuite/PRD_soainfra_02.dbf',
+'/u00/oracle/oradata/jde/temp/proddtat73.dbf'

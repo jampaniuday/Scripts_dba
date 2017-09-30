@@ -1,0 +1,6 @@
+run {
+backup format 'D:\backup\db_%d_%s_%p.bus' database;
+backup format 'D:\backup\al_%d_%s_%p.bus' archivelog all delete all input;
+backup format 'D:\backup\cf_%d_%s_%p.bus' current controlfile;
+execute script limpa_backups_ora7;
+}

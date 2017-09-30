@@ -1,0 +1,17 @@
+alter user BASE_ITERPA
+  identified by "123iter58pa321";
+
+alter user BASEPA
+  identified by "iterba654sepa321";
+
+alter user GERENTE_ITERPA
+  identified by "pagerente321";
+
+alter user GERENTE_BASE
+  identified by "pabase123";
+
+alter user TECNICO_ITERPA
+  identified by "v143iterpa123";
+
+alter user VISUALIZA_ITERPA
+  identified by "589viterpa123";

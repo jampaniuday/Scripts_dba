@@ -1,0 +1,43 @@
+------ Usuario que LANÇA
+------ Privilégios ArcGis - Somente SELECT para :
+------                          LIMITES
+------                          LIMITES_RASC
+create synonym iter1.tecnogeo for base_iterpa.tecnogeo;
+grant execute on base_iterpa.tecnogeo to iter1;
+
+grant select,insert,update on base_iterpa.vw_limites to iter1;
+create view iter1.vw_limites as select * from base_iterpa.vw_limites;
+
+
+-------------
+
+
+------ Usuario que APROVA (ATENÇÃO!!!!!!!!! - conceder privilégios pelo ArcGIS antes dos grants do ORACLE)
+------ Privilégios ArcGis - Somente SELECT para :
+------                          LIMITES
+------                          LIMITES_RASC
+create synonym iter2.limite for base_iterpa.limite ;
+grant execute on base_iterpa.limite to iter2;
+
+create synonym iter2.limites_rasc for base_iterpa.limites_rasc;
+grant select,delete on base_iterpa.limites_rasc to iter2;
+
+
+--------------
+
+
+------ Usuario que LANÇA e APROVA
+------ Privilégios ArcGis - SELECT,INSERT,UPDATE e DELETE para :
+------                          LIMITES
+------                          LIMITES_RASC
+create synonym iter3.tecnogeo for base_iterpa.tecnogeo;
+grant execute on base_iterpa.tecnogeo to iter3;
+
+grant select,insert,update on base_iterpa.vw_limites to iter3;
+create view iter3.vw_limites as select * from base_iterpa.vw_limites;
+
+create synonym iter3.limite for base_iterpa.limite ;
+grant execute on base_iterpa.limite to iter3;
+
+create synonym iter3.limites_rasc for base_iterpa.limites_rasc;
+grant select,delete on base_iterpa.limites_rasc to iter3;

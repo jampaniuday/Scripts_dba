@@ -1,0 +1,56 @@
+#!/bin/bash
+# Menu Shell
+unset $a
+
+variaveis ()
+{
+        ORACLE_SID=TEST
+        DUP_HOME=/home/oratst/atualiza_banco
+        SCRIPTS_HOME=$DUP_HOME/$ORACLE_SID
+        LOG_HOME=$DUP_HOME/log
+}
+
+
+menu ()
+ {
+ a="ok"
+
+while true $a !="ok"
+ do
+        variaveis
+        echo""
+        echo "MENU PRINCIPAL"
+        echo ""
+        echo "1 - Atualizar o banco "$ORACLE_SID" - Duplicate Active Database"
+        echo ""
+        echo "OBS. pressione 'ctrl+c' p/ sair"
+        echo ""
+        echo "Digite a opcao desejada: "
+        read a
+        case $a in
+                1)
+                        variaveis
+                        nohup sh $SCRIPTS_HOME/duplicate.sh $ORACLE_SID TAPE >/dev/null 2>&1 &
+                        echo " "
+                        echo "ATENCAO - Duplicate from backupexec foi iniciado na base" $ORACLE_SID
+                        echo " "
+                        echo "Acompanhar logs em.." $LOG_HOME
+                        echo " "
+                        exit
+                ;;
+                 2)
+                        variaveis
+                        nohup sh $SCRIPTS_HOME/duplicate.sh $ORACLE_SID ACTIVE >/dev/null 2>&1 &
+                        echo " "
+                        echo "ATENCAO - Duplicate from active database foi iniciado na base" $ORACLE_SID
+                        echo " "
+                        echo "Acompanhar logs em.." $LOG_HOME
+                        echo " "
+                        exit
+                ;;
+        esac
+ done
+ }
+
+
+menu

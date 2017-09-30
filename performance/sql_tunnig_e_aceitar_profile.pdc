@@ -1,0 +1,7 @@
+DECLARE
+stmt_task VARCHAR2(64);
+BEGIN
+stmt_task:=dbms_sqltune.create_tuning_task(sql_id => '3nzmcm4smpcdx', task_name => 'task_name');
+END;
+
+EXEC dbms_sqltune.accept_sql_profile('task_name');

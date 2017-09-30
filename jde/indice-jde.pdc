@@ -1,0 +1,13 @@
+create table teste as select * from crpdta.f42119 t where rownum < 10000;
+
+
+
+CREATE INDEX F42119_teste ON teste
+(SDSO15)
+LOGGING
+TABLESPACE CRPDTAI
+PARALLEL 8;
+
+alter index F42119_teste noparallel;
+
+

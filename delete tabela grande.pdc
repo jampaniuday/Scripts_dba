@@ -1,0 +1,27 @@
+set serveroutput on
+ 
+declare
+
+i_commit pls_integer := 1000;
+
+i_rowcount pls_integer := 0;
+ 
+begin
+
+  loop
+
+    delete f01151z1 where ebeddt < 113319 and rownum <= i_commit;
+      i_rowcount := i_rowcount + sql%rowcount;
+
+    dbms_application_info.set_action(action_name => 'deletadas '||i_rowcount||' linhas');
+    if sql%rowcount = 0 then
+      commit;
+      exit;
+    end if;
+    commit;
+  end loop;
+
+  dbms_output.put_line( trim( to_char( i_rowcount, '999999999999')) || ' linhas deletadas') ;
+  dbms_application_info.set_action(action_name => 'deletadas '||i_rowcount||' linhas (done)');
+end;
+/

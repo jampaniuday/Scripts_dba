@@ -1,0 +1,8 @@
+drop user gerente_iterpa cascade;
+
+CREATE USER gerente_iterpa IDENTIFIED BY pa3iter24
+DEFAULT TABLESPACE base_iterpa_DATA TEMPORARY TABLESPACE base_iterpa_TEMP
+QUOTA UNLIMITED ON base_iterpa_DATA
+QUOTA UNLIMITED ON base_iterpa_INDEX;
+GRANT resource TO gerente_iterpa;
+GRANT CONNECT TO gerente_iterpa;

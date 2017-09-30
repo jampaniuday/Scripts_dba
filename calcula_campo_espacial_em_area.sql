@@ -1,0 +1,1 @@
+UPDATE lotesincra l SET l.area_calculada = ROUND(SDO_GEOM.sdo_area(l.geometry,1,'unit = HECTARE'),4) || ' HA'

@@ -1,0 +1,17 @@
+
+
+copy (
+
+select * ....)
+
+to '/caminho.csv' ;
+
+ou direto
+
+\f ','
+\a
+\t
+\o /tmp/moocow.csv
+SELECT foo,bar FROM whatever;
+\o
+\q

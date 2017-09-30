@@ -1,0 +1,8 @@
+select t.numcra,
+       t.datacc,
+       TO_CHAR(TO_DATE('1970-01-01 00:00', 'YYYY-MM-DD HH24:MI') +
+               ((t.horacc / 60) / 24),
+               'HH24:MI')
+  from vetorh.R070ACC t
+ where t.numcad = 2679
+   and t.datacc > '01/06/2016' order by t.datacc desc , t.horacc 

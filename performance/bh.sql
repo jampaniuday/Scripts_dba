@@ -1,0 +1,17 @@
+with positivo as (
+SELECT numcad,sum(qtdhor) soma
+FROM vetorh.R011LAN WHERE datlan between '01/06/2016' and '08/08/2016' and sinlan='+'
+group by numcad
+),
+negativo as (
+SELECT numcad,sum(qtdhor) soma 
+FROM vetorh.R011LAN WHERE datlan between '01/06/2016' and '08/08/2016' and sinlan='-'
+group by numcad
+)
+select p.numcad,fun.nomfun,p.soma "min +",n.soma "min -",
+--case when p.soma>n.soma then '+ '|| to_char(trunc(sysdate) + (p.soma-n.soma)/24/60,'hh24:mi') else '- '||to_char(trunc(sysdate) + (n.soma-p.soma)/24/60,'hh24:mi') end BH
+case when p.soma>n.soma then '+ '|| to_char(trunc(sysdate) + NUMTODSINTERVAL ((p.soma-n.soma), 'second'),'mi:ss') else '- '|| to_char(trunc(sysdate) + NUMTODSINTERVAL ((n.soma-p.soma), 'second'),'mi:ss') end BH
+from positivo p
+join negativo n on p.numcad=n.numcad
+join vetorh.R034FUN fun on fun.numcad=p.numcad
+order by fun.nomfun;

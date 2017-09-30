@@ -1,0 +1,32 @@
+SELECT NAME, VALUE
+FROM V$SYSSTAT
+WHERE NAME = 'redo buffer allocation retries';
+
+SELECT a.name,b.value
+     FROM   v$statname a,v$sysstat b
+     WHERE  a.statistic# = b.statistic#
+        AND a.name like '%redo%';
+
+  SELECT SUM(value) "Redo Buffer Waits"
+     FROM v$sysstat
+     WHERE  name = 'redo log space requests';        
+        
+        
+ SELECT SUM(value) "Redo Buffer Waits"
+     FROM v$sysstat
+     WHERE  name = 'redo log space wait time';
+     
+SELECT TO_CHAR(FIRST_TIME,'YYYY-MM-DD') DAY,
+TO_CHAR(FIRST_TIME,'HH24') HOUR,
+COUNT(*) TOTAL
+FROM V$LOG_HISTORY
+GROUP BY TO_CHAR(FIRST_TIME,'YYYY-MM-DD'),TO_CHAR(FIRST_TIME,'HH24')
+ORDER BY TO_CHAR(FIRST_TIME,'YYYY-MM-DD'),TO_CHAR(FIRST_TIME,'HH24')
+ASC;     
+
+select * from V$INSTANCE_RECOVERY
+
+Select Round(e.value/s.value,5) "Redo Log Ratio"
+From v$sysstat s, v$sysstat e
+Where s.name = 'redo log space requests'
+and e.name = 'redo entries'

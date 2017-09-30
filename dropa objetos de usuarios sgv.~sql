@@ -1,0 +1,34 @@
+SELECT 'DROP ' || object_type || ' ' || owner || '.' || object_name || 
+       DECODE(object_type, 'TABLE', ' CASCADE CONSTRAINTS PURGE') || ';'AS v_sql
+  FROM dba_objects
+ WHERE object_type IN ('TABLE',
+                       'VIEW',
+                       'PACKAGE',
+                       'TYPE',
+                       'PROCEDURE',
+                       'FUNCTION',
+                       'TRIGGER',
+                       'SEQUENCE')
+   and owner in ('ADM_SGV_ACE',
+                 'ADM_SGV_ALO',
+                 'ADM_SGV_AUD',
+                 'ADM_SGV_AUX',
+                 'ADM_SGV_BI',
+                 'ADM_SGV_CAD',
+                 'ADM_SGV_CEP',
+                 'ADM_SGV_FTR',
+                 'ADM_SGV_PRC',
+                 'ADM_SGV_SEX',
+                 'ADM_SGV_TMP',
+                 'ADM_SIT',
+                 'TENDENCIA',
+                 'ADM_SGV_INT',
+                 'ADM_SGV_JDE',
+                 'ADM_SGV_SFA',
+                 'ADM_SIG_PRC',
+                 'ADM_SGV_COB',
+                 'ADM_SGV_EQP',
+                 'ADM_SGV_PIN',
+                 'ADM_SGV_TRN',
+                 'ADM_SGV')
+ ORDER BY object_type, object_name

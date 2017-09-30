@@ -1,0 +1,10 @@
+alter database datafile '/basedados2/fac01/undotbs01.dbf' resize 2096M; 
+alter database datafile '/basedados2/fac01/undotbs01.dbf' AUTOEXTEND ON NEXT 5M MAXSIZE 10240M;
+alter database tempfile '/basedados2/fac01/temp01.dbf' resize 2096M;
+alter database tempfile '/basedados2/fac01/temp01.dbf' AUTOEXTEND ON NEXT 80M MAXSIZE 10240M;
+alter database datafile '/basedados/fac01/users01.dbf' resize 256M;
+alter database datafile '/basedados/fac01/users01.dbf' AUTOEXTEND ON NEXT 5M MAXSIZE 1024M;
+alter system set nls_date_format='dd/mm/yyyy hh24:mi:ss' scope=spfile;
+shutdown immediate;
+startup;
+EXIT;

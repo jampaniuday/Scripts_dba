@@ -1,0 +1,2 @@
+
+SELECT t.nomfun ,t.valsal FROM VETORH.R034FUN t WHERE NUMEMP=1 AND TIPCOL=1 AND SITAFA<>7 and nomfun like '%Hermes%';

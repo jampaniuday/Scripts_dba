@@ -1,0 +1,1 @@
+for /f %%C in (hashs.txt) do echo %%C

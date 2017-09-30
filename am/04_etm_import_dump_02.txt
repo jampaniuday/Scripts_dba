@@ -1,0 +1,3 @@
+Copiar o arquivo de dump para o drive d: abrir uma command window no diretorio d:
+
+imp etam@oraares file=01_estad_munisad69.dmp log=etamimp.log fromuser=etam touser=etam

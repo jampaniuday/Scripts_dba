@@ -1,0 +1,40 @@
+SQL> create table TESTE_TEMPO (a timestamp(0), b timestamp(0));
+
+Tabela criada.
+
+SQL> insert into TESTE_TEMPO values (sysdate,sysdate+0.1);
+
+1 linha criada.
+
+SQL> insert into TESTE_TEMPO values (sysdate,sysdate+0.3);
+
+1 linha criada.
+
+SQL> insert into TESTE_TEMPO values (sysdate,sysdate+0.7);
+
+1 linha criada.
+
+SQL> insert into TESTE_TEMPO values (sysdate,sysdate+0.9);
+
+1 linha criada.
+
+SQL> commit;
+
+Commit concluÝdo.
+
+SQL> l
+  1  select to_char(a,'DD-MM-RRRR HH24:MI:SS') as "DATA 1",
+  2         to_char(b,'DD-MM-RRRR HH24:MI:SS') as "DATA 2",
+  3         to_char(a-b,'DD-MM-RRRR HH24:MI:SS') as "DIREFENCA"
+  4* from TESTE_TEMPO
+
+SQL> /
+
+DATA 1              DATA 2              DIREFENCA
+------------------- ------------------- --------------------
+23-12-2006 12:08:32 23-12-2006 14:32:32 -000000000 02:24:00
+23-12-2006 12:08:39 23-12-2006 19:20:39 -000000000 07:12:00
+23-12-2006 12:08:45 24-12-2006 04:56:45 -000000000 16:48:00
+23-12-2006 12:08:51 24-12-2006 09:44:51 -000000000 21:36:00
+
+SQL>

@@ -1,0 +1,4 @@
+run {
+execute script backup2_full_apisora2;
+execute script limpa_backups_apisora2;
+}

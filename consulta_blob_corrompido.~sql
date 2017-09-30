@@ -1,0 +1,27 @@
+declare
+  pag    number;
+  len    number;
+  c      varchar2(10);
+  charpp number := 8132/2;
+
+begin
+  for r in (select rowid rid, dbms_lob.getlength (ARQUIVO) len
+            from   sigloro2.DW_ARQUIVOS_LOTE) loop
+    if r.len is not null then
+      for page in 0..r.len/charpp loop
+        begin
+          select dbms_lob.substr (ARQUIVO, 1, 1+ (page * charpp))
+          into   c
+          from   sigloro2.DW_ARQUIVOS_LOTE
+          where  rowid = r.rid;
+       
+        exception
+          when others then
+            dbms_output.put_line ('Error on rowid ' ||R.rid||' page '||page);
+            dbms_output.put_line (sqlerrm);
+        end;
+      end loop;
+    end if;
+  end loop;
+end;
+/

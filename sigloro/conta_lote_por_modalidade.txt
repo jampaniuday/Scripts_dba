@@ -1,0 +1,2 @@
+select distinct(lm.nome) "NOME MODALIDADE", count(tl.nome_do_lote)"QTDE DE LOTES" 
+from sigloro2.tab_lote tl, sigloro2.lov_modalidade lm where tl.modalidade=lm.id group by lm.nome

@@ -1,0 +1,504 @@
+
+Recovery Manager: Release 9.2.0.4.0 - Production
+
+Copyright (c) 1995, 2002, Oracle Corporation.  All rights reserved.
+
+conectado ao banco de dados de destino: ORA7 (DBID=1237157136)
+conectado ao banco de dados do catálogo de recuperação
+
+RMAN> run {
+2> backup format 'D:\backup\db_%d_%s_%p.bus' database;
+3> backup format 'D:\backup\al_%d_%s_%p.bus' archivelog all delete all input;
+4> backup format 'D:\backup\cf_%d_%s_%p.bus' current controlfile;
+5> execute script limpa_backups_ora7;
+6> }
+7> 
+Iniciando backup em 15/07/05
+canal alocado: ORA_DISK_1
+canal ORA_DISK_1: sid=22 devtype=DISK
+canal ORA_DISK_1: iniciando conjunto de backups do arquivo de dados full
+canal ORA_DISK_1: especificando arquivo(s) de dados no conjunto de backups
+fno=00008 name=D:\ORACLE\ORADATA\ORA7\USERS01.DBF do arquivo de dados de entrada
+fno=00071 name=D:\ORACLE\ORADATA\ORA7\FABIO\HERMES_DATA.DBF do arquivo de dados de entrada
+fno=00019 name=D:\ORACLE\ORADATA\ORA7\ESPACIAL\ESPAC_DATA.DBF do arquivo de dados de entrada
+fno=00103 name=D:\ORACLE\ORADATA\ORA7\ACRE\ACRE_DATA.DBF do arquivo de dados de entrada
+fno=00090 name=D:\ORACLE\ORADATA\ORA7\BASE_ACRE\BASE_ACRE_DATA.DBF do arquivo de dados de entrada
+fno=00021 name=D:\ORACLE\ORADATA\ORA7\FABIO\FABIO_DATA.DBF do arquivo de dados de entrada
+fno=00099 name=D:\ORACLE\ORADATA\ORA7\BASE_TST\BASE_TST_INDEX.DBF do arquivo de dados de entrada
+fno=00100 name=D:\ORACLE\ORADATA\ORA7\HERMES_PROC\HERMES_PROC_DATA.DBF do arquivo de dados de entrada
+fno=00023 name=D:\ORACLE\ORADATA\ORA7\RM\RM_DADOS.DBF do arquivo de dados de entrada
+fno=00024 name=D:\ORACLE\ORADATA\ORA7\RM\RM_INDICES.DBF do arquivo de dados de entrada
+fno=00061 name=D:\ORACLE\ORADATA\ORA7\MARANHAO\MARANHAO_INDEX.DBF do arquivo de dados de entrada
+fno=00096 name=D:\ORACLE\ORADATA\ORA7\SDE\SDE_DATA.DBF do arquivo de dados de entrada
+fno=00035 name=D:\ORACLE\ORADATA\ORA7\VGA\VGA_DATA.DBF do arquivo de dados de entrada
+fno=00038 name=D:\ORACLE\ORADATA\ORA7\AMAPA\AMAPA_INDEX.DBF do arquivo de dados de entrada
+fno=00012 name=D:\ORACLE\ORADATA\ORA7\MESTRE_RIOS\MR_DATA.DBF do arquivo de dados de entrada
+fno=00052 name=D:\ORACLE\ORADATA\ORA7\FUNAI_SERV\FUNAI_SERV_DATA.DBF do arquivo de dados de entrada
+fno=00128 name=D:\ORACLE\ORADATA\ORA7\DESMATE2004\DESM2004_DATA.DBF do arquivo de dados de entrada
+fno=00030 name=D:\ORACLE\ORADATA\ORA7\PROMOT\PROMOT3_INDEX.DBF do arquivo de dados de entrada
+fno=00049 name=D:\ORACLE\ORADATA\ORA7\ERLON\ERLON_INDEX.DBF do arquivo de dados de entrada
+fno=00075 name=D:\ORACLE\ORADATA\ORA7\SIG_VGA\SIG_VGA_INDEX.DBF do arquivo de dados de entrada
+fno=00124 name=D:\ORACLE\ORADATA\ORA7\WT\WT_DATA.DBF do arquivo de dados de entrada
+fno=00082 name=D:\ORACLE\ORADATA\ORA7\BASERONDONIA\BASERONDONIA_INDEX.DBF do arquivo de dados de entrada
+fno=00041 name=D:\ORACLE\ORADATA\ORA7\DCAR\DCAR_INDEX.DBF do arquivo de dados de entrada
+fno=00091 name=D:\ORACLE\ORADATA\ORA7\BASE_ACRE\BASE_ACRE_INDEX.DBF do arquivo de dados de entrada
+fno=00020 name=D:\ORACLE\ORADATA\ORA7\ESPACIAL\ESPAC_INDEX.DBF do arquivo de dados de entrada
+fno=00047 name=D:\ORACLE\ORADATA\ORA7\D2002\D2002_INDEX.DBF do arquivo de dados de entrada
+fno=00068 name=D:\ORACLE\ORADATA\ORA7\SERV_SERV\SERV_SERV_DATA.DBF do arquivo de dados de entrada
+fno=00119 name=D:\ORACLE\ORADATA\ORA7\FABIO\FABIOTST_DATA.DBF do arquivo de dados de entrada
+fno=00014 name=D:\ORACLE\ORADATA\ORA7\COMPONENTES\NET_DATA.DBF do arquivo de dados de entrada
+fno=00026 name=D:\ORACLE\ORADATA\ORA7\PROMOT\PROMOT1_INDEX.DBF do arquivo de dados de entrada
+fno=00043 name=D:\ORACLE\ORADATA\ORA7\DCAR2\DCAR2_INDEX.DBF do arquivo de dados de entrada
+fno=00069 name=D:\ORACLE\ORADATA\ORA7\SERV_SERV\SERV_SERV_INDEX.DBF do arquivo de dados de entrada
+fno=00084 name=D:\ORACLE\ORADATA\ORA7\ACERVO_IMAGEM\ACERVOIMAGEM_INDEX.DBF do arquivo de dados de entrada
+fno=00095 name=D:\ORACLE\ORADATA\ORA7\BASE_ES\BASE_ES_INDEX.DBF do arquivo de dados de entrada
+fno=00106 name=D:\ORACLE\ORADATA\ORA7\ACERVO\ACERVO_INDEX.DBF do arquivo de dados de entrada
+fno=00109 name=D:\ORACLE\ORADATA\ORA7\MODESTILO\MODESTILO_DATA.DBF do arquivo de dados de entrada
+fno=00112 name=D:\ORACLE\ORADATA\ORA7\MODQUERY\MODQUERY_INDEX.DBF do arquivo de dados de entrada
+fno=00120 name=D:\ORACLE\ORADATA\ORA7\FABIO\FABIOTST_INDEX.DBF do arquivo de dados de entrada
+fno=00125 name=D:\ORACLE\ORADATA\ORA7\WT\WT_INDEX.DBF do arquivo de dados de entrada
+fno=00131 name=D:\ORACLE\ORADATA\ORA7\FEMA_BGEO\FBGEO_INDEX.DBF do arquivo de dados de entrada
+canal ORA_DISK_1: iniciando o componente 1 em 15/07/05
+canal ORA_DISK_1: componente 1 finalizado em 15/07/05
+handle de componente=D:\BACKUP\DB_ORA7_1989_1.BUS comentário=NONE
+canal ORA_DISK_1: conjunto de backups concluído, tempo decorrido: 00:15:16
+canal ORA_DISK_1: iniciando conjunto de backups do arquivo de dados full
+canal ORA_DISK_1: especificando arquivo(s) de dados no conjunto de backups
+Incluindo SPFILE atual no conjunto de backup
+incluindo arquivo de controle atual no conjunto de backups
+fno=00088 name=D:\ORACLE\ORADATA\ORA7\BASE_MT\BASE_MT_DATA.DBF do arquivo de dados de entrada
+fno=00002 name=D:\ORACLE\ORADATA\ORA7\UNDOTBS01.DBF do arquivo de dados de entrada
+fno=00062 name=D:\ORACLE\ORADATA\ORA7\PPMA\PPMA_DATA.DBF do arquivo de dados de entrada
+fno=00064 name=D:\ORACLE\ORADATA\ORA7\RONDONIA\RONDONIA_DATA.DBF do arquivo de dados de entrada
+fno=00017 name=D:\ORACLE\ORADATA\ORA7\ESPACIAL_DATA.DBF do arquivo de dados de entrada
+fno=00094 name=D:\ORACLE\ORADATA\ORA7\BASE_ES\BASE_ES_DATA.DBF do arquivo de dados de entrada
+fno=00079 name=D:\ORACLE\ORADATA\ORA7\BASEMARANHAO\BASEMARANHAO_DATA.DBF do arquivo de dados de entrada
+fno=00081 name=D:\ORACLE\ORADATA\ORA7\BASERONDONIA\BASERONDONIA_DATA.DBF do arquivo de dados de entrada
+fno=00048 name=D:\ORACLE\ORADATA\ORA7\ERLON\ERLON_DATA.DBF do arquivo de dados de entrada
+fno=00001 name=D:\ORACLE\ORADATA\ORA7\SYSTEM01.DBF do arquivo de dados de entrada
+fno=00089 name=D:\ORACLE\ORADATA\ORA7\BASE_MT\BASE_MT_INDEX.DBF do arquivo de dados de entrada
+fno=00055 name=D:\ORACLE\ORADATA\ORA7\GEO\GEO_INDEX.DBF do arquivo de dados de entrada
+fno=00029 name=D:\ORACLE\ORADATA\ORA7\PROMOT\PROMOT3_DATA.DBF do arquivo de dados de entrada
+fno=00077 name=D:\ORACLE\ORADATA\ORA7\BASEAMAPA\BASEAMAPA_DATA.DBF do arquivo de dados de entrada
+fno=00010 name=D:\ORACLE\ORADATA\ORA7\ATRCURVAS\ATRC_DATA.DBF do arquivo de dados de entrada
+fno=00025 name=D:\ORACLE\ORADATA\ORA7\PROMOT\PROMOT1_DATA.DBF do arquivo de dados de entrada
+fno=00074 name=D:\ORACLE\ORADATA\ORA7\SIG_VGA\SIG_VGA_DATA.DBF do arquivo de dados de entrada
+fno=00114 name=D:\ORACLE\ORADATA\ORA7\FEMAGEO\FEMAGEO_BLOB.DBF do arquivo de dados de entrada
+fno=00065 name=D:\ORACLE\ORADATA\ORA7\RONDONIA\RONDONIA_INDEX.DBF do arquivo de dados de entrada
+fno=00063 name=D:\ORACLE\ORADATA\ORA7\PPMA\PPMA_INDEX.DBF do arquivo de dados de entrada
+fno=00039 name=D:\ORACLE\ORADATA\ORA7\DCAR\DCAR_DATA.DBF do arquivo de dados de entrada
+fno=00066 name=D:\ORACLE\ORADATA\ORA7\SEET\SEET_DATA.DBF do arquivo de dados de entrada
+fno=00057 name=D:\ORACLE\ORADATA\ORA7\HIDROGRAFIA\HIDROGRAFIA_INDEX.DBF do arquivo de dados de entrada
+fno=00045 name=D:\ORACLE\ORADATA\ORA7\DCG\DCG_INDEX.DBF do arquivo de dados de entrada
+fno=00011 name=D:\ORACLE\ORADATA\ORA7\ATRCURVAS\ATRC_INDEX.DBF do arquivo de dados de entrada
+fno=00113 name=D:\ORACLE\ORADATA\ORA7\FEMAGEO\FEMAGEO_DATA.DBF do arquivo de dados de entrada
+fno=00009 name=D:\ORACLE\ORADATA\ORA7\XDB01.DBF do arquivo de dados de entrada
+fno=00036 name=D:\ORACLE\ORADATA\ORA7\VGA\VGA_INDEX.DBF do arquivo de dados de entrada
+fno=00133 name=D:\ORACLE\ORADATA\ORA7\FDESMAT\FDESMAT_INDEX.DBF do arquivo de dados de entrada
+fno=00003 name=D:\ORACLE\ORADATA\ORA7\CWMLITE01.DBF do arquivo de dados de entrada
+fno=00006 name=D:\ORACLE\ORADATA\ORA7\ODM01.DBF do arquivo de dados de entrada
+fno=00028 name=D:\ORACLE\ORADATA\ORA7\PROMOT\PROMOT2_INDEX.DBF do arquivo de dados de entrada
+fno=00067 name=D:\ORACLE\ORADATA\ORA7\SEET\SEET_INDEX.DBF do arquivo de dados de entrada
+fno=00105 name=D:\ORACLE\ORADATA\ORA7\ACERVO\ACERVO_DATA.DBF do arquivo de dados de entrada
+fno=00007 name=D:\ORACLE\ORADATA\ORA7\TOOLS01.DBF do arquivo de dados de entrada
+fno=00016 name=D:\ORACLE\ORADATA\ORA7\GDOSYS\GDO_INDEX.DBF do arquivo de dados de entrada
+fno=00034 name=D:\ORACLE\ORADATA\ORA7\DESMATE2003\DESM2003_INDEX.DBF do arquivo de dados de entrada
+fno=00059 name=D:\ORACLE\ORADATA\ORA7\IMAGEM_SERV\IMAGEM_SERV_INDEX.DBF do arquivo de dados de entrada
+fno=00080 name=D:\ORACLE\ORADATA\ORA7\BASEMARANHAO\BASEMARANHAO_INDEX.DBF do arquivo de dados de entrada
+fno=00093 name=D:\ORACLE\ORADATA\ORA7\CAOS\CAOS_INDEX.DBF do arquivo de dados de entrada
+fno=00104 name=D:\ORACLE\ORADATA\ORA7\ACRE\ACRE_INDEX.DBF do arquivo de dados de entrada
+fno=00108 name=D:\ORACLE\ORADATA\ORA7\MODMETADADO\MODMETADADO_INDEX.DBF do arquivo de dados de entrada
+fno=00111 name=D:\ORACLE\ORADATA\ORA7\MODQUERY\MODQUERY_DATA.DBF do arquivo de dados de entrada
+fno=00118 name=D:\ORACLE\ORADATA\ORA7\MAPARURAL\MAPARURAL_INDEX.DBF do arquivo de dados de entrada
+fno=00122 name=D:\ORACLE\ORADATA\ORA7\GDOC\GDOC_INDEX.DBF do arquivo de dados de entrada
+fno=00129 name=D:\ORACLE\ORADATA\ORA7\DESMATE2004\DESM2004_INDEX.DBF do arquivo de dados de entrada
+canal ORA_DISK_1: iniciando o componente 1 em 15/07/05
+canal ORA_DISK_1: componente 1 finalizado em 15/07/05
+handle de componente=D:\BACKUP\DB_ORA7_1990_1.BUS comentário=NONE
+canal ORA_DISK_1: conjunto de backups concluído, tempo decorrido: 00:18:49
+canal ORA_DISK_1: iniciando conjunto de backups do arquivo de dados full
+canal ORA_DISK_1: especificando arquivo(s) de dados no conjunto de backups
+fno=00054 name=D:\ORACLE\ORADATA\ORA7\GEO\GEO_DATA.DBF do arquivo de dados de entrada
+fno=00098 name=D:\ORACLE\ORADATA\ORA7\BASE_TST\BASE_TST_DATA.DBF do arquivo de dados de entrada
+fno=00050 name=D:\ORACLE\ORADATA\ORA7\ES\ES_DATA.DBF do arquivo de dados de entrada
+fno=00060 name=D:\ORACLE\ORADATA\ORA7\MARANHAO\MARANHAO_DATA.DBF do arquivo de dados de entrada
+fno=00072 name=D:\ORACLE\ORADATA\ORA7\SIG_ES\SIG_ES_DATA.DBF do arquivo de dados de entrada
+fno=00037 name=D:\ORACLE\ORADATA\ORA7\AMAPA\AMAPA_DATA.DBF do arquivo de dados de entrada
+fno=00132 name=D:\ORACLE\ORADATA\ORA7\FDESMAT\FDESMAT_DATA.DBF do arquivo de dados de entrada
+fno=00031 name=D:\ORACLE\ORADATA\ORA7\SC\SC_DATA.DBF do arquivo de dados de entrada
+fno=00130 name=D:\ORACLE\ORADATA\ORA7\FEMA_BGEO\FBGEO_DATA.DBF do arquivo de dados de entrada
+fno=00056 name=D:\ORACLE\ORADATA\ORA7\HIDROGRAFIA\HIDROGRAFIA_DATA.DBF do arquivo de dados de entrada
+fno=00033 name=D:\ORACLE\ORADATA\ORA7\DESMATE2003\DESM2003_DATA.DBF do arquivo de dados de entrada
+fno=00126 name=D:\ORACLE\ORADATA\ORA7\CBA_VGA\CBA_VGA_DATA.DBF do arquivo de dados de entrada
+fno=00070 name=D:\ORACLE\ORADATA\ORA7\SIG_CUIABA\SIG_CUIABA_DATA.DBF do arquivo de dados de entrada
+fno=00044 name=D:\ORACLE\ORADATA\ORA7\DCG\DCG_DATA.DBF do arquivo de dados de entrada
+fno=00051 name=D:\ORACLE\ORADATA\ORA7\ES\ES_INDEX.DBF do arquivo de dados de entrada
+fno=00018 name=D:\ORACLE\ORADATA\ORA7\ESPACIAL_INDEX.DBF do arquivo de dados de entrada
+fno=00027 name=D:\ORACLE\ORADATA\ORA7\PROMOT\PROMOT2_DATA.DBF do arquivo de dados de entrada
+fno=00076 name=D:\ORACLE\ORADATA\ORA7\CBA\CBA_DATA.DBF do arquivo de dados de entrada
+fno=00117 name=D:\ORACLE\ORADATA\ORA7\MAPARURAL\MAPARURAL_BLOB.DBF do arquivo de dados de entrada
+fno=00073 name=D:\ORACLE\ORADATA\ORA7\SIG_ES\SIG_ES_INDEX.DBF do arquivo de dados de entrada
+fno=00085 name=D:\ORACLE\ORADATA\ORA7\SIG_CUIABA\SIG_CUIABA_INDEX2.DBF do arquivo de dados de entrada
+fno=00046 name=D:\ORACLE\ORADATA\ORA7\D2002\D2002_DATA.DBF do arquivo de dados de entrada
+fno=00083 name=D:\ORACLE\ORADATA\ORA7\ACERVO_IMAGEM\ACERVOIMAGEM_DATA.DBF do arquivo de dados de entrada
+fno=00040 name=D:\ORACLE\ORADATA\ORA7\CBA\CBA_INDEX.DBF do arquivo de dados de entrada
+fno=00086 name=D:\ORACLE\ORADATA\ORA7\FABIO\HERMES_INDEX.DBF do arquivo de dados de entrada
+fno=00042 name=D:\ORACLE\ORADATA\ORA7\DCAR2\DCAR2_DATA.DBF do arquivo de dados de entrada
+fno=00116 name=D:\ORACLE\ORADATA\ORA7\MAPARURAL\MAPARURAL_DATA.DBF do arquivo de dados de entrada
+fno=00013 name=D:\ORACLE\ORADATA\ORA7\MESTRE_RIOS\MR_INDEX.DBF do arquivo de dados de entrada
+fno=00015 name=D:\ORACLE\ORADATA\ORA7\GDOSYS\GDO_DATA.DBF do arquivo de dados de entrada
+fno=00102 name=D:\ORACLE\ORADATA\ORA7\USUARIOS_DATA.DBF do arquivo de dados de entrada
+fno=00005 name=D:\ORACLE\ORADATA\ORA7\INDX01.DBF do arquivo de dados de entrada
+fno=00004 name=D:\ORACLE\ORADATA\ORA7\DRSYS01.DBF do arquivo de dados de entrada
+fno=00022 name=D:\ORACLE\ORADATA\ORA7\FABIO\FABIO_INDEX.DBF do arquivo de dados de entrada
+fno=00058 name=D:\ORACLE\ORADATA\ORA7\IMAGEM_SERV\IMAGEM_SERV_DATA.DBF do arquivo de dados de entrada
+fno=00101 name=D:\ORACLE\ORADATA\ORA7\HERMES_PROC\HERMES_PROC_INDEX.DBF do arquivo de dados de entrada
+fno=00123 name=D:\ORACLE\ORADATA\ORA7\WT\WT_BLOB.DBF do arquivo de dados de entrada
+fno=00032 name=D:\ORACLE\ORADATA\ORA7\SC\SC_INDEX.DBF do arquivo de dados de entrada
+fno=00053 name=D:\ORACLE\ORADATA\ORA7\FUNAI_SERV\FUNAI_SERV_INDEX.DBF do arquivo de dados de entrada
+fno=00078 name=D:\ORACLE\ORADATA\ORA7\BASEAMAPA\BASEAMAPA_INDEX.DBF do arquivo de dados de entrada
+fno=00092 name=D:\ORACLE\ORADATA\ORA7\CAOS\CAOS_DATA.DBF do arquivo de dados de entrada
+fno=00097 name=D:\ORACLE\ORADATA\ORA7\SDE\SDE_INDEX.DBF do arquivo de dados de entrada
+fno=00107 name=D:\ORACLE\ORADATA\ORA7\MODMETADADO\MODMETADADO_DATA.DBF do arquivo de dados de entrada
+fno=00110 name=D:\ORACLE\ORADATA\ORA7\MODESTILO\MODESTILO_INDEX.DBF do arquivo de dados de entrada
+fno=00115 name=D:\ORACLE\ORADATA\ORA7\FEMAGEO\FEMAGEO_INDEX.DBF do arquivo de dados de entrada
+fno=00121 name=D:\ORACLE\ORADATA\ORA7\GDOC\GDOC_DATA.DBF do arquivo de dados de entrada
+fno=00127 name=D:\ORACLE\ORADATA\ORA7\CBA_VGA\CBA_VGA_INDEX.DBF do arquivo de dados de entrada
+fno=00087 name=D:\ORACLE\ORADATA\ORA7\FABIO\SVG.DBF do arquivo de dados de entrada
+canal ORA_DISK_1: iniciando o componente 1 em 15/07/05
+canal ORA_DISK_1: componente 1 finalizado em 15/07/05
+handle de componente=D:\BACKUP\DB_ORA7_1991_1.BUS comentário=NONE
+canal ORA_DISK_1: conjunto de backups concluído, tempo decorrido: 00:18:57
+Finalizado backup em 15/07/05
+
+Iniciando backup em 15/07/05
+log atual arquivado
+utilizando o canal ORA_DISK_1
+canal ORA_DISK_1: iniciando conjunto de backups de log de arquivamento
+canal ORA_DISK_1: especificando log(s) de arquivamento no conjunto de backups
+log de arquivamento thread de entrada=1 seqüência=2310 id reg.=2314 marcação=563717816
+canal ORA_DISK_1: iniciando o componente 1 em 15/07/05
+canal ORA_DISK_1: componente 1 finalizado em 15/07/05
+handle de componente=D:\BACKUP\AL_ORA7_1992_1.BUS comentário=NONE
+canal ORA_DISK_1: conjunto de backups concluído, tempo decorrido: 00:00:09
+canal ORA_DISK_1: deletando log(s) de arquivamento
+nome do arquivo de log de arquivamento=D:\ORACLE\ORADATA\ORA7\ARCHIVE\1_2310.DBF id reg.=2314 marcação=563717816
+Finalizado backup em 15/07/05
+
+Iniciando backup em 15/07/05
+utilizando o canal ORA_DISK_1
+canal ORA_DISK_1: iniciando conjunto de backups do arquivo de dados full
+canal ORA_DISK_1: especificando arquivo(s) de dados no conjunto de backups
+incluindo arquivo de controle atual no conjunto de backups
+canal ORA_DISK_1: iniciando o componente 1 em 15/07/05
+canal ORA_DISK_1: componente 1 finalizado em 15/07/05
+handle de componente=D:\BACKUP\CF_ORA7_1993_1.BUS comentário=NONE
+canal ORA_DISK_1: conjunto de backups concluído, tempo decorrido: 00:00:01
+Finalizado backup em 15/07/05
+
+executando script: limpa_backups_ora7
+
+utilizando o canal ORA_DISK_1
+componente de backup submetido a verificação cruzada: localizado como 'EXPIRED'
+handle de componente de backup=D:\BACKUP\DB_ORA7_1984_1.BUS id reg.=3692 marcação=563511609
+componente de backup submetido a verificação cruzada: localizado como 'EXPIRED'
+handle de componente de backup=D:\BACKUP\DB_ORA7_1985_1.BUS id reg.=3693 marcação=563512518
+componente de backup submetido a verificação cruzada: localizado como 'EXPIRED'
+handle de componente de backup=D:\BACKUP\DB_ORA7_1986_1.BUS id reg.=3694 marcação=563513655
+componente de backup submetido a verificação cruzada: localizado como 'EXPIRED'
+handle de componente de backup=D:\BACKUP\AL_ORA7_1987_1.BUS id reg.=3695 marcação=563514793
+componente de backup submetido a verificação cruzada: localizado como 'EXPIRED'
+handle de componente de backup=D:\BACKUP\CF_ORA7_1988_1.BUS id reg.=3696 marcação=563514840
+componente de backup submetido a verificação cruzada: localizado como 'AVAILABLE'
+handle de componente de backup=D:\BACKUP\DB_ORA7_1989_1.BUS id reg.=3697 marcação=563714629
+componente de backup submetido a verificação cruzada: localizado como 'AVAILABLE'
+handle de componente de backup=D:\BACKUP\DB_ORA7_1990_1.BUS id reg.=3698 marcação=563715548
+componente de backup submetido a verificação cruzada: localizado como 'AVAILABLE'
+handle de componente de backup=D:\BACKUP\DB_ORA7_1991_1.BUS id reg.=3699 marcação=563716676
+componente de backup submetido a verificação cruzada: localizado como 'AVAILABLE'
+handle de componente de backup=D:\BACKUP\AL_ORA7_1992_1.BUS id reg.=3700 marcação=563717818
+componente de backup submetido a verificação cruzada: localizado como 'AVAILABLE'
+handle de componente de backup=D:\BACKUP\CF_ORA7_1993_1.BUS id reg.=3701 marcação=563717826
+Fez a verificação cruzada de 10 objetos
+
+
+utilizando o canal ORA_DISK_1
+componente de backup deletado
+handle de componente de backup=D:\BACKUP\DB_ORA7_1984_1.BUS id reg.=3692 marcação=563511609
+componente de backup deletado
+handle de componente de backup=D:\BACKUP\DB_ORA7_1985_1.BUS id reg.=3693 marcação=563512518
+componente de backup deletado
+handle de componente de backup=D:\BACKUP\DB_ORA7_1986_1.BUS id reg.=3694 marcação=563513655
+componente de backup deletado
+handle de componente de backup=D:\BACKUP\AL_ORA7_1987_1.BUS id reg.=3695 marcação=563514793
+componente de backup deletado
+handle de componente de backup=D:\BACKUP\CF_ORA7_1988_1.BUS id reg.=3696 marcação=563514840
+Deletou 5 objetos EXPIRADOS
+
+
+a política de retenção RMAN será aplicada ao comando
+a política de retenção RMAN está definida para a redundância 1
+utilizando o canal ORA_DISK_1
+nenhum backup obsoleto encontrado
+
+Recovery Manager completo.
+
+Recovery Manager: Release 9.2.0.4.0 - Production
+
+Copyright (c) 1995, 2002, Oracle Corporation.  All rights reserved.
+
+conectado ao banco de dados de destino: ORA7 (DBID=1237157136)
+conectado ao banco de dados do catálogo de recuperação
+
+RMAN> run {
+2> backup format 'D:\backup\db_%d_%s_%p.bus' database;
+3> backup format 'D:\backup\al_%d_%s_%p.bus' archivelog all delete all input;
+4> backup format 'D:\backup\cf_%d_%s_%p.bus' current controlfile;
+5> execute script limpa_backups_ora7;
+6> }
+7> 
+Iniciando backup em 16/08/05
+canal alocado: ORA_DISK_1
+canal ORA_DISK_1: sid=20 devtype=DISK
+canal ORA_DISK_1: iniciando conjunto de backups do arquivo de dados full
+canal ORA_DISK_1: especificando arquivo(s) de dados no conjunto de backups
+fno=00008 name=D:\ORACLE\ORADATA\ORA7\USERS01.DBF do arquivo de dados de entrada
+fno=00071 name=D:\ORACLE\ORADATA\ORA7\FABIO\HERMES_DATA.DBF do arquivo de dados de entrada
+fno=00019 name=D:\ORACLE\ORADATA\ORA7\ESPACIAL\ESPAC_DATA.DBF do arquivo de dados de entrada
+fno=00103 name=D:\ORACLE\ORADATA\ORA7\ACRE\ACRE_DATA.DBF do arquivo de dados de entrada
+fno=00089 name=D:\ORACLE\ORADATA\ORA7\BASE_MT\BASE_MT_INDEX.DBF do arquivo de dados de entrada
+fno=00055 name=D:\ORACLE\ORADATA\ORA7\GEO\GEO_INDEX.DBF do arquivo de dados de entrada
+fno=00099 name=D:\ORACLE\ORADATA\ORA7\BASE_TST\BASE_TST_INDEX.DBF do arquivo de dados de entrada
+fno=00100 name=D:\ORACLE\ORADATA\ORA7\HERMES_PROC\HERMES_PROC_DATA.DBF do arquivo de dados de entrada
+fno=00023 name=D:\ORACLE\ORADATA\ORA7\RM\RM_DADOS.DBF do arquivo de dados de entrada
+fno=00025 name=D:\ORACLE\ORADATA\ORA7\PROMOT\PROMOT1_DATA.DBF do arquivo de dados de entrada
+fno=00074 name=D:\ORACLE\ORADATA\ORA7\SIG_VGA\SIG_VGA_DATA.DBF do arquivo de dados de entrada
+fno=00114 name=D:\ORACLE\ORADATA\ORA7\FEMAGEO\FEMAGEO_BLOB.DBF do arquivo de dados de entrada
+fno=00038 name=D:\ORACLE\ORADATA\ORA7\AMAPA\AMAPA_INDEX.DBF do arquivo de dados de entrada
+fno=00063 name=D:\ORACLE\ORADATA\ORA7\PPMA\PPMA_INDEX.DBF do arquivo de dados de entrada
+fno=00039 name=D:\ORACLE\ORADATA\ORA7\DCAR\DCAR_DATA.DBF do arquivo de dados de entrada
+fno=00066 name=D:\ORACLE\ORADATA\ORA7\SEET\SEET_DATA.DBF do arquivo de dados de entrada
+fno=00134 name=D:\ORACLE\ORADATA\ORA7\BASE_SINOP\B_SINOP_DATA.DBF do arquivo de dados de entrada
+fno=00045 name=D:\ORACLE\ORADATA\ORA7\DCG\DCG_INDEX.DBF do arquivo de dados de entrada
+fno=00049 name=D:\ORACLE\ORADATA\ORA7\ERLON\ERLON_INDEX.DBF do arquivo de dados de entrada
+fno=00075 name=D:\ORACLE\ORADATA\ORA7\SIG_VGA\SIG_VGA_INDEX.DBF do arquivo de dados de entrada
+fno=00124 name=D:\ORACLE\ORADATA\ORA7\WT\WT_DATA.DBF do arquivo de dados de entrada
+fno=00015 name=D:\ORACLE\ORADATA\ORA7\GDOSYS\GDO_DATA.DBF do arquivo de dados de entrada
+fno=00102 name=D:\ORACLE\ORADATA\ORA7\USUARIOS_DATA.DBF do arquivo de dados de entrada
+fno=00091 name=D:\ORACLE\ORADATA\ORA7\BASE_ACRE\BASE_ACRE_INDEX.DBF do arquivo de dados de entrada
+fno=00006 name=D:\ORACLE\ORADATA\ORA7\ODM01.DBF do arquivo de dados de entrada
+fno=00028 name=D:\ORACLE\ORADATA\ORA7\PROMOT\PROMOT2_INDEX.DBF do arquivo de dados de entrada
+fno=00067 name=D:\ORACLE\ORADATA\ORA7\SEET\SEET_INDEX.DBF do arquivo de dados de entrada
+fno=00105 name=D:\ORACLE\ORADATA\ORA7\ACERVO\ACERVO_DATA.DBF do arquivo de dados de entrada
+fno=00007 name=D:\ORACLE\ORADATA\ORA7\TOOLS01.DBF do arquivo de dados de entrada
+fno=00014 name=D:\ORACLE\ORADATA\ORA7\COMPONENTES\NET_DATA.DBF do arquivo de dados de entrada
+fno=00032 name=D:\ORACLE\ORADATA\ORA7\SC\SC_INDEX.DBF do arquivo de dados de entrada
+fno=00053 name=D:\ORACLE\ORADATA\ORA7\FUNAI_SERV\FUNAI_SERV_INDEX.DBF do arquivo de dados de entrada
+fno=00078 name=D:\ORACLE\ORADATA\ORA7\BASEAMAPA\BASEAMAPA_INDEX.DBF do arquivo de dados de entrada
+fno=00092 name=D:\ORACLE\ORADATA\ORA7\CAOS\CAOS_DATA.DBF do arquivo de dados de entrada
+fno=00097 name=D:\ORACLE\ORADATA\ORA7\SDE\SDE_INDEX.DBF do arquivo de dados de entrada
+fno=00107 name=D:\ORACLE\ORADATA\ORA7\MODMETADADO\MODMETADADO_DATA.DBF do arquivo de dados de entrada
+fno=00110 name=D:\ORACLE\ORADATA\ORA7\MODESTILO\MODESTILO_INDEX.DBF do arquivo de dados de entrada
+fno=00115 name=D:\ORACLE\ORADATA\ORA7\FEMAGEO\FEMAGEO_INDEX.DBF do arquivo de dados de entrada
+fno=00121 name=D:\ORACLE\ORADATA\ORA7\GDOC\GDOC_DATA.DBF do arquivo de dados de entrada
+fno=00127 name=D:\ORACLE\ORADATA\ORA7\CBA_VGA\CBA_VGA_INDEX.DBF do arquivo de dados de entrada
+fno=00087 name=D:\ORACLE\ORADATA\ORA7\FABIO\SVG.DBF do arquivo de dados de entrada
+fno=00135 name=D:\ORACLE\ORADATA\ORA7\BASE_SINOP\B_SINOP_INDEX.DBF do arquivo de dados de entrada
+canal ORA_DISK_1: iniciando o componente 1 em 16/08/05
+canal ORA_DISK_1: componente 1 finalizado em 16/08/05
+handle de componente=D:\BACKUP\DB_ORA7_2039_1.BUS comentário=NONE
+canal ORA_DISK_1: conjunto de backups concluído, tempo decorrido: 00:15:26
+canal ORA_DISK_1: iniciando conjunto de backups do arquivo de dados full
+canal ORA_DISK_1: especificando arquivo(s) de dados no conjunto de backups
+Incluindo SPFILE atual no conjunto de backup
+incluindo arquivo de controle atual no conjunto de backups
+fno=00088 name=D:\ORACLE\ORADATA\ORA7\BASE_MT\BASE_MT_DATA.DBF do arquivo de dados de entrada
+fno=00002 name=D:\ORACLE\ORADATA\ORA7\UNDOTBS01.DBF do arquivo de dados de entrada
+fno=00062 name=D:\ORACLE\ORADATA\ORA7\PPMA\PPMA_DATA.DBF do arquivo de dados de entrada
+fno=00064 name=D:\ORACLE\ORADATA\ORA7\RONDONIA\RONDONIA_DATA.DBF do arquivo de dados de entrada
+fno=00017 name=D:\ORACLE\ORADATA\ORA7\ESPACIAL_DATA.DBF do arquivo de dados de entrada
+fno=00094 name=D:\ORACLE\ORADATA\ORA7\BASE_ES\BASE_ES_DATA.DBF do arquivo de dados de entrada
+fno=00079 name=D:\ORACLE\ORADATA\ORA7\BASEMARANHAO\BASEMARANHAO_DATA.DBF do arquivo de dados de entrada
+fno=00081 name=D:\ORACLE\ORADATA\ORA7\BASERONDONIA\BASERONDONIA_DATA.DBF do arquivo de dados de entrada
+fno=00048 name=D:\ORACLE\ORADATA\ORA7\ERLON\ERLON_DATA.DBF do arquivo de dados de entrada
+fno=00001 name=D:\ORACLE\ORADATA\ORA7\SYSTEM01.DBF do arquivo de dados de entrada
+fno=00033 name=D:\ORACLE\ORADATA\ORA7\DESMATE2003\DESM2003_DATA.DBF do arquivo de dados de entrada
+fno=00126 name=D:\ORACLE\ORADATA\ORA7\CBA_VGA\CBA_VGA_DATA.DBF do arquivo de dados de entrada
+fno=00029 name=D:\ORACLE\ORADATA\ORA7\PROMOT\PROMOT3_DATA.DBF do arquivo de dados de entrada
+fno=00077 name=D:\ORACLE\ORADATA\ORA7\BASEAMAPA\BASEAMAPA_DATA.DBF do arquivo de dados de entrada
+fno=00010 name=D:\ORACLE\ORADATA\ORA7\ATRCURVAS\ATRC_DATA.DBF do arquivo de dados de entrada
+fno=00027 name=D:\ORACLE\ORADATA\ORA7\PROMOT\PROMOT2_DATA.DBF do arquivo de dados de entrada
+fno=00076 name=D:\ORACLE\ORADATA\ORA7\CBA\CBA_DATA.DBF do arquivo de dados de entrada
+fno=00117 name=D:\ORACLE\ORADATA\ORA7\MAPARURAL\MAPARURAL_BLOB.DBF do arquivo de dados de entrada
+fno=00065 name=D:\ORACLE\ORADATA\ORA7\RONDONIA\RONDONIA_INDEX.DBF do arquivo de dados de entrada
+fno=00085 name=D:\ORACLE\ORADATA\ORA7\SIG_CUIABA\SIG_CUIABA_INDEX2.DBF do arquivo de dados de entrada
+fno=00012 name=D:\ORACLE\ORADATA\ORA7\MESTRE_RIOS\MR_DATA.DBF do arquivo de dados de entrada
+fno=00052 name=D:\ORACLE\ORADATA\ORA7\FUNAI_SERV\FUNAI_SERV_DATA.DBF do arquivo de dados de entrada
+fno=00128 name=D:\ORACLE\ORADATA\ORA7\DESMATE2004\DESM2004_DATA.DBF do arquivo de dados de entrada
+fno=00040 name=D:\ORACLE\ORADATA\ORA7\CBA\CBA_INDEX.DBF do arquivo de dados de entrada
+fno=00011 name=D:\ORACLE\ORADATA\ORA7\ATRCURVAS\ATRC_INDEX.DBF do arquivo de dados de entrada
+fno=00042 name=D:\ORACLE\ORADATA\ORA7\DCAR2\DCAR2_DATA.DBF do arquivo de dados de entrada
+fno=00116 name=D:\ORACLE\ORADATA\ORA7\MAPARURAL\MAPARURAL_DATA.DBF do arquivo de dados de entrada
+fno=00013 name=D:\ORACLE\ORADATA\ORA7\MESTRE_RIOS\MR_INDEX.DBF do arquivo de dados de entrada
+fno=00082 name=D:\ORACLE\ORADATA\ORA7\BASERONDONIA\BASERONDONIA_INDEX.DBF do arquivo de dados de entrada
+fno=00041 name=D:\ORACLE\ORADATA\ORA7\DCAR\DCAR_INDEX.DBF do arquivo de dados de entrada
+fno=00003 name=D:\ORACLE\ORADATA\ORA7\CWMLITE01.DBF do arquivo de dados de entrada
+fno=00020 name=D:\ORACLE\ORADATA\ORA7\ESPACIAL\ESPAC_INDEX.DBF do arquivo de dados de entrada
+fno=00047 name=D:\ORACLE\ORADATA\ORA7\D2002\D2002_INDEX.DBF do arquivo de dados de entrada
+fno=00068 name=D:\ORACLE\ORADATA\ORA7\SERV_SERV\SERV_SERV_DATA.DBF do arquivo de dados de entrada
+fno=00119 name=D:\ORACLE\ORADATA\ORA7\FABIO\FABIOTST_DATA.DBF do arquivo de dados de entrada
+fno=00016 name=D:\ORACLE\ORADATA\ORA7\GDOSYS\GDO_INDEX.DBF do arquivo de dados de entrada
+fno=00034 name=D:\ORACLE\ORADATA\ORA7\DESMATE2003\DESM2003_INDEX.DBF do arquivo de dados de entrada
+fno=00059 name=D:\ORACLE\ORADATA\ORA7\IMAGEM_SERV\IMAGEM_SERV_INDEX.DBF do arquivo de dados de entrada
+fno=00080 name=D:\ORACLE\ORADATA\ORA7\BASEMARANHAO\BASEMARANHAO_INDEX.DBF do arquivo de dados de entrada
+fno=00093 name=D:\ORACLE\ORADATA\ORA7\CAOS\CAOS_INDEX.DBF do arquivo de dados de entrada
+fno=00104 name=D:\ORACLE\ORADATA\ORA7\ACRE\ACRE_INDEX.DBF do arquivo de dados de entrada
+fno=00108 name=D:\ORACLE\ORADATA\ORA7\MODMETADADO\MODMETADADO_INDEX.DBF do arquivo de dados de entrada
+fno=00111 name=D:\ORACLE\ORADATA\ORA7\MODQUERY\MODQUERY_DATA.DBF do arquivo de dados de entrada
+fno=00118 name=D:\ORACLE\ORADATA\ORA7\MAPARURAL\MAPARURAL_INDEX.DBF do arquivo de dados de entrada
+fno=00122 name=D:\ORACLE\ORADATA\ORA7\GDOC\GDOC_INDEX.DBF do arquivo de dados de entrada
+fno=00129 name=D:\ORACLE\ORADATA\ORA7\DESMATE2004\DESM2004_INDEX.DBF do arquivo de dados de entrada
+canal ORA_DISK_1: iniciando o componente 1 em 16/08/05
+canal ORA_DISK_1: componente 1 finalizado em 16/08/05
+handle de componente=D:\BACKUP\DB_ORA7_2040_1.BUS comentário=NONE
+canal ORA_DISK_1: conjunto de backups concluído, tempo decorrido: 00:19:38
+canal ORA_DISK_1: iniciando conjunto de backups do arquivo de dados full
+canal ORA_DISK_1: especificando arquivo(s) de dados no conjunto de backups
+fno=00054 name=D:\ORACLE\ORADATA\ORA7\GEO\GEO_DATA.DBF do arquivo de dados de entrada
+fno=00098 name=D:\ORACLE\ORADATA\ORA7\BASE_TST\BASE_TST_DATA.DBF do arquivo de dados de entrada
+fno=00050 name=D:\ORACLE\ORADATA\ORA7\ES\ES_DATA.DBF do arquivo de dados de entrada
+fno=00060 name=D:\ORACLE\ORADATA\ORA7\MARANHAO\MARANHAO_DATA.DBF do arquivo de dados de entrada
+fno=00072 name=D:\ORACLE\ORADATA\ORA7\SIG_ES\SIG_ES_DATA.DBF do arquivo de dados de entrada
+fno=00037 name=D:\ORACLE\ORADATA\ORA7\AMAPA\AMAPA_DATA.DBF do arquivo de dados de entrada
+fno=00132 name=D:\ORACLE\ORADATA\ORA7\FDESMAT\FDESMAT_DATA.DBF do arquivo de dados de entrada
+fno=00031 name=D:\ORACLE\ORADATA\ORA7\SC\SC_DATA.DBF do arquivo de dados de entrada
+fno=00130 name=D:\ORACLE\ORADATA\ORA7\FEMA_BGEO\FBGEO_DATA.DBF do arquivo de dados de entrada
+fno=00056 name=D:\ORACLE\ORADATA\ORA7\HIDROGRAFIA\HIDROGRAFIA_DATA.DBF do arquivo de dados de entrada
+fno=00021 name=D:\ORACLE\ORADATA\ORA7\FABIO\FABIO_DATA.DBF do arquivo de dados de entrada
+fno=00090 name=D:\ORACLE\ORADATA\ORA7\BASE_ACRE\BASE_ACRE_DATA.DBF do arquivo de dados de entrada
+fno=00070 name=D:\ORACLE\ORADATA\ORA7\SIG_CUIABA\SIG_CUIABA_DATA.DBF do arquivo de dados de entrada
+fno=00044 name=D:\ORACLE\ORADATA\ORA7\DCG\DCG_DATA.DBF do arquivo de dados de entrada
+fno=00051 name=D:\ORACLE\ORADATA\ORA7\ES\ES_INDEX.DBF do arquivo de dados de entrada
+fno=00018 name=D:\ORACLE\ORADATA\ORA7\ESPACIAL_INDEX.DBF do arquivo de dados de entrada
+fno=00024 name=D:\ORACLE\ORADATA\ORA7\RM\RM_INDICES.DBF do arquivo de dados de entrada
+fno=00061 name=D:\ORACLE\ORADATA\ORA7\MARANHAO\MARANHAO_INDEX.DBF do arquivo de dados de entrada
+fno=00096 name=D:\ORACLE\ORADATA\ORA7\SDE\SDE_DATA.DBF do arquivo de dados de entrada
+fno=00035 name=D:\ORACLE\ORADATA\ORA7\VGA\VGA_DATA.DBF do arquivo de dados de entrada
+fno=00073 name=D:\ORACLE\ORADATA\ORA7\SIG_ES\SIG_ES_INDEX.DBF do arquivo de dados de entrada
+fno=00046 name=D:\ORACLE\ORADATA\ORA7\D2002\D2002_DATA.DBF do arquivo de dados de entrada
+fno=00083 name=D:\ORACLE\ORADATA\ORA7\ACERVO_IMAGEM\ACERVOIMAGEM_DATA.DBF do arquivo de dados de entrada
+fno=00057 name=D:\ORACLE\ORADATA\ORA7\HIDROGRAFIA\HIDROGRAFIA_INDEX.DBF do arquivo de dados de entrada
+fno=00030 name=D:\ORACLE\ORADATA\ORA7\PROMOT\PROMOT3_INDEX.DBF do arquivo de dados de entrada
+fno=00086 name=D:\ORACLE\ORADATA\ORA7\FABIO\HERMES_INDEX.DBF do arquivo de dados de entrada
+fno=00113 name=D:\ORACLE\ORADATA\ORA7\FEMAGEO\FEMAGEO_DATA.DBF do arquivo de dados de entrada
+fno=00009 name=D:\ORACLE\ORADATA\ORA7\XDB01.DBF do arquivo de dados de entrada
+fno=00036 name=D:\ORACLE\ORADATA\ORA7\VGA\VGA_INDEX.DBF do arquivo de dados de entrada
+fno=00133 name=D:\ORACLE\ORADATA\ORA7\FDESMAT\FDESMAT_INDEX.DBF do arquivo de dados de entrada
+fno=00005 name=D:\ORACLE\ORADATA\ORA7\INDX01.DBF do arquivo de dados de entrada
+fno=00004 name=D:\ORACLE\ORADATA\ORA7\DRSYS01.DBF do arquivo de dados de entrada
+fno=00022 name=D:\ORACLE\ORADATA\ORA7\FABIO\FABIO_INDEX.DBF do arquivo de dados de entrada
+fno=00058 name=D:\ORACLE\ORADATA\ORA7\IMAGEM_SERV\IMAGEM_SERV_DATA.DBF do arquivo de dados de entrada
+fno=00101 name=D:\ORACLE\ORADATA\ORA7\HERMES_PROC\HERMES_PROC_INDEX.DBF do arquivo de dados de entrada
+fno=00123 name=D:\ORACLE\ORADATA\ORA7\WT\WT_BLOB.DBF do arquivo de dados de entrada
+fno=00026 name=D:\ORACLE\ORADATA\ORA7\PROMOT\PROMOT1_INDEX.DBF do arquivo de dados de entrada
+fno=00043 name=D:\ORACLE\ORADATA\ORA7\DCAR2\DCAR2_INDEX.DBF do arquivo de dados de entrada
+fno=00069 name=D:\ORACLE\ORADATA\ORA7\SERV_SERV\SERV_SERV_INDEX.DBF do arquivo de dados de entrada
+fno=00084 name=D:\ORACLE\ORADATA\ORA7\ACERVO_IMAGEM\ACERVOIMAGEM_INDEX.DBF do arquivo de dados de entrada
+fno=00095 name=D:\ORACLE\ORADATA\ORA7\BASE_ES\BASE_ES_INDEX.DBF do arquivo de dados de entrada
+fno=00106 name=D:\ORACLE\ORADATA\ORA7\ACERVO\ACERVO_INDEX.DBF do arquivo de dados de entrada
+fno=00109 name=D:\ORACLE\ORADATA\ORA7\MODESTILO\MODESTILO_DATA.DBF do arquivo de dados de entrada
+fno=00112 name=D:\ORACLE\ORADATA\ORA7\MODQUERY\MODQUERY_INDEX.DBF do arquivo de dados de entrada
+fno=00120 name=D:\ORACLE\ORADATA\ORA7\FABIO\FABIOTST_INDEX.DBF do arquivo de dados de entrada
+fno=00125 name=D:\ORACLE\ORADATA\ORA7\WT\WT_INDEX.DBF do arquivo de dados de entrada
+fno=00131 name=D:\ORACLE\ORADATA\ORA7\FEMA_BGEO\FBGEO_INDEX.DBF do arquivo de dados de entrada
+canal ORA_DISK_1: iniciando o componente 1 em 16/08/05
+canal ORA_DISK_1: componente 1 finalizado em 16/08/05
+handle de componente=D:\BACKUP\DB_ORA7_2041_1.BUS comentário=NONE
+canal ORA_DISK_1: conjunto de backups concluído, tempo decorrido: 00:18:46
+Finalizado backup em 16/08/05
+
+Iniciando backup em 16/08/05
+log atual arquivado
+utilizando o canal ORA_DISK_1
+canal ORA_DISK_1: iniciando conjunto de backups de log de arquivamento
+canal ORA_DISK_1: especificando log(s) de arquivamento no conjunto de backups
+log de arquivamento thread de entrada=1 seqüência=2336 id reg.=2340 marcação=566424623
+log de arquivamento thread de entrada=1 seqüência=2337 id reg.=2341 marcação=566473200
+canal ORA_DISK_1: iniciando o componente 1 em 16/08/05
+canal ORA_DISK_1: componente 1 finalizado em 16/08/05
+handle de componente=D:\BACKUP\AL_ORA7_2042_1.BUS comentário=NONE
+canal ORA_DISK_1: conjunto de backups concluído, tempo decorrido: 00:00:09
+canal ORA_DISK_1: deletando log(s) de arquivamento
+nome do arquivo de log de arquivamento=D:\ORACLE\ORADATA\ORA7\ARCHIVE\1_2336.DBF id reg.=2340 marcação=566424623
+nome do arquivo de log de arquivamento=D:\ORACLE\ORADATA\ORA7\ARCHIVE\1_2337.DBF id reg.=2341 marcação=566473200
+Finalizado backup em 16/08/05
+
+Iniciando backup em 16/08/05
+utilizando o canal ORA_DISK_1
+canal ORA_DISK_1: iniciando conjunto de backups do arquivo de dados full
+canal ORA_DISK_1: especificando arquivo(s) de dados no conjunto de backups
+incluindo arquivo de controle atual no conjunto de backups
+canal ORA_DISK_1: iniciando o componente 1 em 16/08/05
+canal ORA_DISK_1: componente 1 finalizado em 16/08/05
+handle de componente=D:\BACKUP\CF_ORA7_2043_1.BUS comentário=NONE
+canal ORA_DISK_1: conjunto de backups concluído, tempo decorrido: 00:00:01
+Finalizado backup em 16/08/05
+
+executando script: limpa_backups_ora7
+
+utilizando o canal ORA_DISK_1
+componente de backup submetido a verificação cruzada: localizado como 'AVAILABLE'
+handle de componente de backup=D:\BACKUP\DB_ORA7_2034_1.BUS id reg.=3742 marcação=566061751
+componente de backup submetido a verificação cruzada: localizado como 'AVAILABLE'
+handle de componente de backup=D:\BACKUP\DB_ORA7_2035_1.BUS id reg.=3743 marcação=566062659
+componente de backup submetido a verificação cruzada: localizado como 'AVAILABLE'
+handle de componente de backup=D:\BACKUP\DB_ORA7_2036_1.BUS id reg.=3744 marcação=566063826
+componente de backup submetido a verificação cruzada: localizado como 'AVAILABLE'
+handle de componente de backup=D:\BACKUP\AL_ORA7_2037_1.BUS id reg.=3745 marcação=566064967
+componente de backup submetido a verificação cruzada: localizado como 'AVAILABLE'
+handle de componente de backup=D:\BACKUP\CF_ORA7_2038_1.BUS id reg.=3746 marcação=566064972
+componente de backup submetido a verificação cruzada: localizado como 'AVAILABLE'
+handle de componente de backup=D:\BACKUP\DB_ORA7_2039_1.BUS id reg.=3747 marcação=566469968
+componente de backup submetido a verificação cruzada: localizado como 'AVAILABLE'
+handle de componente de backup=D:\BACKUP\DB_ORA7_2040_1.BUS id reg.=3748 marcação=566470897
+componente de backup submetido a verificação cruzada: localizado como 'AVAILABLE'
+handle de componente de backup=D:\BACKUP\DB_ORA7_2041_1.BUS id reg.=3749 marcação=566472074
+componente de backup submetido a verificação cruzada: localizado como 'AVAILABLE'
+handle de componente de backup=D:\BACKUP\AL_ORA7_2042_1.BUS id reg.=3750 marcação=566473203
+componente de backup submetido a verificação cruzada: localizado como 'AVAILABLE'
+handle de componente de backup=D:\BACKUP\CF_ORA7_2043_1.BUS id reg.=3751 marcação=566473211
+Fez a verificação cruzada de 10 objetos
+
+
+utilizando o canal ORA_DISK_1
+
+a política de retenção RMAN será aplicada ao comando
+a política de retenção RMAN está definida para a redundância 1
+utilizando o canal ORA_DISK_1
+Deletando os seguintes backups e cópias obsoletas:
+Tipo                 Chave    Hora de Término    Nome do Arquivo/Handle
+-------------------- ------ ------------------ --------------------
+Conjunto de Backups           238325 11/08/05          
+Parte de Backup       238328 11/08/05           D:\BACKUP\DB_ORA7_2034_1.BUS
+Conjunto de Backups           238326 11/08/05          
+Parte de Backup       238329 11/08/05           D:\BACKUP\DB_ORA7_2035_1.BUS
+Conjunto de Backups           238327 11/08/05          
+Parte de Backup       238330 11/08/05           D:\BACKUP\DB_ORA7_2036_1.BUS
+Conjunto de Backups           238472 11/08/05          
+Parte de Backup       238473 11/08/05           D:\BACKUP\AL_ORA7_2037_1.BUS
+Conjunto de Backups           238476 11/08/05          
+Parte de Backup       238477 11/08/05           D:\BACKUP\CF_ORA7_2038_1.BUS
+componente de backup deletado
+handle de componente de backup=D:\BACKUP\DB_ORA7_2034_1.BUS id reg.=3742 marcação=566061751
+componente de backup deletado
+handle de componente de backup=D:\BACKUP\DB_ORA7_2035_1.BUS id reg.=3743 marcação=566062659
+componente de backup deletado
+handle de componente de backup=D:\BACKUP\DB_ORA7_2036_1.BUS id reg.=3744 marcação=566063826
+componente de backup deletado
+handle de componente de backup=D:\BACKUP\AL_ORA7_2037_1.BUS id reg.=3745 marcação=566064967
+componente de backup deletado
+handle de componente de backup=D:\BACKUP\CF_ORA7_2038_1.BUS id reg.=3746 marcação=566064972
+Deletou 5 objetos
+
+
+Recovery Manager completo.

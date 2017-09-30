@@ -1,0 +1,24 @@
+create synonym tecnico_iterpa.tecnogeo for base_iterpa.tecnogeo;
+grant execute on base_iterpa.tecnogeo to tecnico_iterpa;
+
+grant select,insert,update on base_iterpa.vw_limites to tecnico_iterpa;
+create view tecnico_iterpa.vw_limites as select * from base_iterpa.vw_limites;
+
+create synonym tecnico_iterpa.limite for base_iterpa.limite ;
+grant execute on base_iterpa.limite to tecnico_iterpa;
+
+create synonym tecnico_iterpa.limites_rasc for base_iterpa.limites_rasc;
+grant select,delete on base_iterpa.limites_rasc to tecnico_iterpa;
+
+
+create synonym gerente_iterpa.tecnogeo for base_iterpa.tecnogeo;
+grant execute on base_iterpa.tecnogeo to gerente_iterpa;
+
+grant select,insert,update on base_iterpa.vw_limites to gerente_iterpa;
+create view gerente_iterpa.vw_limites as select * from base_iterpa.vw_limites;
+
+create synonym gerente_iterpa.limite for base_iterpa.limite ;
+grant execute on base_iterpa.limite to gerente_iterpa;
+
+create synonym gerente_iterpa.limites_rasc for base_iterpa.limites_rasc;
+grant select,delete on base_iterpa.limites_rasc to gerente_iterpa;

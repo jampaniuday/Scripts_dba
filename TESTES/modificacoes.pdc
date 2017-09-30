@@ -1,0 +1,17 @@
+--Tabela car_ad teve seu campo geometry dropado.
+-- Drop columns 
+alter table CAR_AD drop column GEOMETRY;
+
+--A tabela tab_car_provisorio teve seu campo area definido como nulo
+update tab_car_provisorio t set t.area_ha=null;
+
+--a tabela  car_p_auas foi dropada
+drop table car_p_auas;
+
+--a tabela car_app teve seu campo geometry escluido e os registro do campo cod_app onde o código fosse igual a 2 deletados
+-- Drop columns 
+alter table CAR_APP drop column GEOMETRY;
+delete car_app t  where t.cod_app = 2;
+
+--tabela car_aprt foi dropada com purge.
+drop table car_aprt purge;

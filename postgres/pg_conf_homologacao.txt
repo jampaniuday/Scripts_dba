@@ -1,0 +1,21 @@
+
+servidor : 192.168.12.25
+
+portas/bancos
+
+5433  -- recargaonline
+5434  -- recargasul
+5435  -- recargaco
+5437  -- recargaredestef
+
+editar arquivo pg_hba.conf
+
+host    recargaonline   postgresql      192.168.73.29/32        trust
+host    recargasul   	postgresql      192.168.73.29/32        trust
+host    recargaco   	postgresql      192.168.73.29/32        trust
+host    redestef	   	postgresql      192.168.73.29/32        trust
+
+validar alteração
+
+SELECT pg_reload_conf();
+

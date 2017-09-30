@@ -1,0 +1,31 @@
+. 
+remoto_0.tst 
+d33833e997e947992186875c0e852218 
+local_remoto_0.tst 
+tstd33833e997e947992186875c0e852218 
+hash diferente 
+............................ 
+remoto_1.tst 
+25b950c6ff1fdfb77dd03d22e775fb2d 
+local_remoto_1.tst 
+tst25b950c6ff1fdfb77dd03d22e775fb2d 
+hash diferente 
+............................ 
+remoto_2.tst 
+da23ee2aca6ac2e2cb9ca3e9bfd2b1d2 
+local_remoto_2.tst 
+tstda23ee2aca6ac2e2cb9ca3e9bfd2b1d2 
+hash diferente 
+............................ 
+remoto_3.tst 
+a8fedbe803eb0651585d8ab3dd64c840 
+local_remoto_3.tst 
+tsta8fedbe803eb0651585d8ab3dd64c840 
+hash diferente 
+............................ 
+remoto_4.tst 
+e2d3178fe8384a0a9e508c203ead7f1c 
+local_remoto_4.tst 
+tste2d3178fe8384a0a9e508c203ead7f1c 
+hash diferente 
+............................ 

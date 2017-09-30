@@ -1,0 +1,3 @@
+Copiar o arquivo de dump para o drive d: abrir uma command window no diretorio d:
+
+imp slgam@oraares file=01_esquema_slgam.dmp log=slagamimp.log fromuser=slgam touser=slgam

@@ -1,0 +1,4 @@
+
+
+var v_num number;
+exec :v_num:=dbms_spm.load_plans_from_cursor_cache(sql_id => '9xw42yz8pv9u2',plan_hash_value => 281736387 );

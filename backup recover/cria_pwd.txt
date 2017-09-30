@@ -1,0 +1,11 @@
+--criando e recriando o pwd do oracle
+--alterar o sid
+--entrar no diretorio /ORALCE_HOME$/dbs
+
+criando 
+
+orapwd file=orapwSID password=oracle entries=5
+
+re-criando
+
+orapwd file=orapwSID password=oracle entries=5 force=y

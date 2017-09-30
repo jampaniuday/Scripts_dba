@@ -1,0 +1,38 @@
+/*Processo carga para spedcontabil
+Se for solicitado que seja realizado o processo abaixo utilize o script 
+ Passo 1 -  Criando as tabelas de Integração do JDE Usuário 
+    CREATE TABLE csf_int_det_saldo_periodo AS SELECT * FROM vw_csf_int_det_saldo_periodo;
+    CREATE TABLE csf_int_lcto_contabil AS SELECT * FROM vw_csf_int_lcto_contabil;
+    CREATE TABLE csf_int_partida_lcto AS SELECT * FROM vw_csf_int_partida_lcto;
+
+ Passo 2 Gerar Dump das tabelas 
+    csf_int_det_saldo_periodo
+    csf_int_lcto_contabil
+    csf_int_partida_lcto
+
+ Passo 3 Carregar o dump para as respectivas tabelas do Usuário Compliance CSF_INT
+    De csf_int_det_saldo_periodo para vw_csf_int_det_saldo_periodo;
+    De csf_int_lcto_contabil para vw_csf_int_lcto_contabil;
+    De csf_int_partida_lcto para vw_csf_int_partida_lcto;
+
+ Passo 4 Dropar as tabelas Temporárias;
+
+    drop table   csf_int_det_saldo_periodo;
+    drop table   csf_int_lcto_contabil;
+    drop table   csf_int_partida_lcto;*/
+----------------------------------------------------------------------------------------
+
+
+
+truncate table csf_int.vw_csf_int_det_saldo_periodo;
+truncate table csf_int.vw_csf_int_lcto_contabil;
+truncate table csf_int.vw_csf_int_partida_lcto;
+
+insert into csf_int.vw_csf_int_det_saldo_periodo select * from proddta.vw_csf_int_det_saldo_periodo;
+commit;
+
+insert into csf_int.vw_csf_int_lcto_contabil  select * from proddta.vw_csf_int_lcto_contabil;
+commit;
+
+insert into csf_int.vw_csf_int_partida_lcto  select * from proddta.vw_csf_int_partida_lcto;
+commit;

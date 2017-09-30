@@ -1,0 +1,1 @@
+select* from auditoria as of timestamp(sysdate- interval '2' h)

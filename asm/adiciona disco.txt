@@ -1,0 +1,88 @@
+Hoje vamos falar um pouco de asm, o asm é uma solução de armazenamento da oracle
+onde o proprio oracle se encarrega do gernciamento dos discos.Possibilitando por exemplo 
+aumentar o espaço utilizado pelos dados, diminuir, distribuir os dadosd e forma a melhorar o desempenho,
+e tudo isso de forma "transaparente" para os usuarios finais.Resumindo , o oracle é o responsavel pelos discos.
+Muitos dbas tem o pé atras com o asm, afinal, perdemos um pouco(muito) do controle dos datafiles e dos arquivos fisicos do banco.
+Ja vi casos onde apos uma falha do "asm" houve perda de dados.Porem sempre esse tipo de problema não ocorre sem uma ajudinha humana ne!(rsrsrsrs)
+Quando trabalhamos com um ambiente RAC o ASM é muito util, afinal não é necessario parar o cluster so para adicionar um disco ou realizar uma manutenção nos datafiles.
+Bom conceitos a parte, uma das tarefas mais corriqueiras no dia a dia do DBA é resolver problemas de espaço, quando o banco cresceu demais, e precisamos extender o espaço do asm .Assim abaixo esta um passo a passo para completar essa tarefa:
+
+Primeiramente precisamos de uma novo disco, assim sera necessario falar com o cara que cuida da storage e solicitar que o disco seja apresentado para o servidor(em um ambiente rac deve ser apresentado para todos os nós participantes do cluster)
+Para verificar os discos podemos executa o comando abaixo (como root) 
+
+
+# ls sd*
+sda  sda1  sda2  sdb  sdc  sdd
+
+este comando lista todos os dispositivos existentes
+
+Apos verificar o disco temos que particiona-lo
+
+# fdisk /dev/sdb
+
+Device contains neither a valid DOS partition table, nor Sun, SGI or OSF disklabel
+Building a new DOS disklabel. Changes will remain in memory only,
+until you decide to write them. After that, of course, the previous
+content won't be recoverable.
+
+
+The number of cylinders for this disk is set to 1305.
+There is nothing wrong with that, but this is larger than 1024,
+and could in certain setups cause problems with:
+1) software that runs at boot time (e.g., old versions of LILO)
+2) booting and partitioning software from other OSs
+   (e.g., DOS FDISK, OS/2 FDISK)
+Warning: invalid flag 0x0000 of partition table 4 will be corrected by w(rite)
+
+Command (m for help): n
+Command action
+   e   extended
+   p   primary partition (1-4)
+p
+Partition number (1-4): 1
+First cylinder (1-1305, default 1):
+Using default value 1
+Last cylinder or +size or +sizeM or +sizeK (1-1305, default 1305):
+Using default value 1305
+
+Command (m for help): w
+The partition table has been altered!
+
+Calling ioctl() to re-read partition table.
+Syncing disks.
+#
+
+Depois de particionado devemos criar o disco no asm assim
+Ainda como root execute:
+
+# oracleasm createdisk VOL1 /dev/sdb1
+Marking disk "/dev/sdb1" as an ASM disk:                   [  OK  ]
+
+Para que todos os nós vejam o novo disco executamos um scan em todos os nós do cluster:
+
+# /etc/init.d/oracleasm scandisks
+Scanning system for ASM disks:                             [  OK  ]
+#
+
+Apos o scan logamos com o usuario proprietario do asm geralmente o grid
+e entramos no sqlplus para adicionar o disco criado no asm:
+
+sqlplus / as sysasm
+
+
+ALTER DISKGROUP GRUPO1 ADD DISK  '/dev/oracleasm/disks/VOL1' ;
+
+Para verificar o resultado podemos usar a seguinte consulta:
+
+select * from v$asm_disk
+
+Apos a adição o asm fará o rebalanceamento dos dados entre todos os discos participantes do asm o tempo e o impacto disso dependera do parametro
+asm_power_limit quanto maior o valor mais rapido sera o rebalanceamento porem poderemos sentir uma degradação no desempenho, quanto menor mais tempo ira durar
+o rebalanceamento.
+
+Caso seja necessario remover um disco o sintaxe é esta:
+
+ALTER DISKGROUP GRUPO1 DROP DISK VOL1;
+
+Bom era isso! Ate a proxima !
+

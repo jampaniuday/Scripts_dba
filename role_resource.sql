@@ -1,0 +1,11 @@
+grant create cluster to RESOURCE;
+grant create indextype to RESOURCE;
+grant create materialized view to RESOURCE;
+grant create operator to RESOURCE;
+grant create procedure to RESOURCE;
+grant create sequence to RESOURCE;
+grant create synonym to RESOURCE;
+grant create table to RESOURCE;
+grant create trigger to RESOURCE;
+grant create type to RESOURCE;
+grant create view to RESOURCE;

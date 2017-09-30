@@ -1,0 +1,66 @@
+begin
+for i in 1..1000 loop
+--insert into mario.teste2 (data) values (sysdate);
+update mario.teste2 set id=mario.seq_controle_backup.nextval ;
+end loop;
+end;
+
+
+
+  declare
+  i number(10);
+  begin
+  i :=1;
+  while i < 1000 loop
+  --insert into mario.teste2 (data) values (sysdate);
+  update mario.teste2 set id=mario.seq_controle_backup.nextval ;
+  i:= i+1;
+  end loop;
+  end;
+  
+  
+DECLARE
+  grade CHAR(1);
+BEGIN
+  grade := 'B';
+  IF grade = 'A' THEN
+    DBMS_OUTPUT.PUT_LINE('Excellent');
+  ELSIF grade = 'B' THEN
+    DBMS_OUTPUT.PUT_LINE('Very Good');
+  ELSIF grade = 'C' THEN
+    DBMS_OUTPUT.PUT_LINE('Good');
+  ELSIF grade = 'D' THEN
+    DBMS_OUTPUT. PUT_LINE('Fair');
+  ELSIF grade = 'F' THEN
+    DBMS_OUTPUT.PUT_LINE('Poor');
+  ELSE
+    DBMS_OUTPUT.PUT_LINE('No such grade');
+  END IF;
+ENd;
+
+  
+  
+DECLARE
+  grade CHAR(1);
+BEGIN
+  grade := '&grade';
+  CASE grade
+    WHEN 'A' THEN DBMS_OUTPUT.PUT_LINE('Excellent');
+    WHEN 'B' THEN DBMS_OUTPUT.PUT_LINE('Very Good');
+    WHEN 'C' THEN DBMS_OUTPUT.PUT_LINE('Good');
+    WHEN 'D' THEN DBMS_OUTPUT.PUT_LINE('Fair');
+    WHEN 'F' THEN DBMS_OUTPUT.PUT_LINE('Poor');
+    ELSE DBMS_OUTPUT.PUT_LINE('No such grade');
+  END CASE;
+END;
+  
+  
+DECLARE
+  p     NUMBER := 0;
+BEGIN
+  FOR k IN 1..500 LOOP -- calculate pi with 500 terms
+    p := p +  (  ( (-1) ** (k + 1) ) / ((2 * k) - 1) );
+  END LOOP;
+  p := 4 * p;
+  DBMS_OUTPUT.PUT_LINE( 'pi is approximately : ' || p ); -- print result
+END;  

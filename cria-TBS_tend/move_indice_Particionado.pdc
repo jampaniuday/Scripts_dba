@@ -1,0 +1,1 @@
+Alter index adm_sgv_trn.transacao_i04  rebuild partition A15_M01  tablespace PART_TRN_IDX_I04_A15_M01;

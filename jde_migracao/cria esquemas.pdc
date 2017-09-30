@@ -1,0 +1,64 @@
+-- Create the user 
+create user TESTDTA identified by jde
+  default tablespace TESTDTAT
+  temporary tablespace TEMP
+  profile DEFAULT
+  quota unlimited on testdtai
+  quota unlimited on testdtat;
+-- Grant/Revoke role privileges 
+grant cria_triggers_jde to TESTDTA;
+grant jde_role to TESTDTA;
+
+-- Create the user 
+create user TESTCTL identified by jde
+  default tablespace TESTCTLT
+  temporary tablespace TEMP
+  profile DEFAULT
+  quota unlimited on testctli
+  quota unlimited on testctlt;
+-- Grant/Revoke role privileges 
+grant jde_role to TESTCTL;
+
+-- Create the user 
+create user PY900 identified by jde
+  default tablespace PY900T
+  temporary tablespace TEMP
+  profile DEFAULT
+  quota unlimited on py900i
+  quota unlimited on py900t;
+-- Grant/Revoke role privileges 
+grant jde_role to PY900;
+
+
+-- Create the user 
+create user DV900 identified by jde
+  default tablespace DV900T
+  temporary tablespace TEMP
+  profile DEFAULT
+  quota unlimited on dv900i
+  quota unlimited on dv900t;
+-- Grant/Revoke role privileges 
+grant jde_role to DV900;
+
+
+-- Create the user 
+create user CRPDTA identified by jde
+  default tablespace CRPDTAT
+  temporary tablespace TEMP
+  profile DEFAULT
+  quota unlimited on crpdtai
+  quota unlimited on crpdtat;
+-- Grant/Revoke role privileges 
+grant cria_triggers_jde to CRPDTA;
+grant jde_role to CRPDTA;
+
+
+-- Create the user 
+create user CRPCTL identified by jde
+  default tablespace CRPCTLT
+  temporary tablespace TEMP
+  profile DEFAULT
+  quota unlimited on crpctli
+  quota unlimited on crpctlt;
+-- Grant/Revoke role privileges 
+grant jde_role to CRPCTL;
